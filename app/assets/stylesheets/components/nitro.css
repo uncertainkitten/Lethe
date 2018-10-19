@@ -1,0 +1,15 @@
+#nitro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nitroCharge {
+  font-size: 200pt;
+  border: 10px, dashed, #770077;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.flashy {
+  display: none;
+}

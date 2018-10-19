@@ -1,0 +1,46 @@
+.app {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 1900px;
+  height: 740px;
+}
+
+.appHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: flex-start;
+  margin: 0 auto;
+  margin-left: 10px;
+  height: 150px;
+}
+
+.leftSplit{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 900px;
+  height: 720px;
+  margin: auto;
+}
+
+.authWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 80%;
+  height: 720px;
+  margin: auto;
+}
+
+.letheLogo{
+  cursor: pointer;
+  background-image: image_url("lethe-logo");
+  margin: 10px;
+  width: 100px;
+  height: 75px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

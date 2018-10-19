@@ -1,0 +1,88 @@
+.serverIndex {
+  display: flex;
+  flex-flow: column wrap;
+  width: 80px;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+  background-color: #202225;
+  color: #202225;
+}
+
+.numOnline {
+  text-align: center;
+  margin: 5px 10px;
+  font-size: 10pt;
+  color: #5E6054;
+  background-color: #202225;
+}
+
+.hackBorder {
+  border-bottom: 2px solid #5E6054;
+  margin: 10px 17px;
+  width: 35px;
+}
+
+.serverIcon {
+  flex-basis: 100%;
+  border-radius: 50%;
+  border: 1px solid #202225;
+  font-size: 14pt;
+  height: 40px;
+  width: 60px;
+  padding-top: 20px;
+  align-content: center;
+  text-align: center;
+  margin: 5px;
+  z-index: 2;
+}
+
+.serverIcon:hover {
+  border-radius: 25%;
+  cursor: pointer;
+}
+
+.newServerIcon {
+  flex-basis: 100%;
+  border-radius: 50%;
+  border: 1px dashed #535559;
+  color: #535559;
+  font-size: 36pt;
+  height: 55px;
+  width: 60px;
+  padding-top: 5px;
+  align-content: center;
+  text-align: center;
+  margin: 5px;
+  background-color: #202225
+}
+
+.newServerIcon:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  border: 1px dashed #FFFFFF;
+}
+
+.serverList {
+  height: 680px;
+  background-color: #202225;
+  color: #202225;
+  overflow-y: scroll;
+  z-index: 2;
+}
+
+.serverList::-webkit-scrollbar {
+  -webkit-appearance: none;
+  display: none;
+  -webkit-transform: translateZ(0px)
+}
+
+.serverItem {
+  background-color: #202225;
+}
+
+.dropdown {
+  z-index: 3;
+  width: 200px;
+  height: 200px;
+}

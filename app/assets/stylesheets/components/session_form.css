@@ -1,0 +1,106 @@
+.session{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  border: 0;
+  box-shadow: 1px 1px 3px 3px #2E3035;
+  width: 450px;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.sessionError{
+  color: #F04747;
+  font-style: italic;
+  font-size: 9pt;
+}
+
+.errLabel{
+  font-size: 9pt;
+  color: #F04747;
+  font-weight: bold;
+  margin: 10px 10px 10px 10px;
+  width: 390px;
+}
+
+.welcome {
+  font-size: 18pt;
+  margin: 8px;
+  font-weight: lighter;
+  padding-top: 35px;
+}
+
+.authTagline {
+  color: #72767D;
+  margin: 8px 15px 15px 15px;
+  font-size: 12pt;
+}
+
+.authForm {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 400px;
+  margin-bottom: 40px;
+}
+
+.authButton {
+  background-color: #7289DA;
+  width: 100%;
+  padding: 13px;
+  margin: 30px 10px 10px 10px;
+  color: #FFFFFF;
+  font-size: 11pt;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.demoButton {
+  background-color: #36393F;
+  color: #7289DA;
+  flex-basis: 100%;
+  border: 0;
+  box-shadow: none;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: none;
+  font-size: 9pt;
+  margin: -1px;
+  cursor: pointer;
+}
+
+.authButton:hover {
+  background-color: #677BC4;
+}
+
+.authLabel {
+  font-size: 9pt;
+  color: #B9BBBE;
+  font-weight: bold;
+  margin: 10px 10px 10px 10px;
+  width: 390px;
+}
+
+.authText {
+  background-color: #303339;
+  border: solid 1px #222428;
+  margin-top: 10px;
+  padding: 11px 0px;
+  width: 390px;
+  color: #F6F6F7;
+}
+
+.authLink {
+  align-self: flex-start;
+  font-size: 9pt;
+  margin: 2px 10px;
+  flex-basis: 45%;
+}
+
+.authQuest {
+  color: #6D7177;
+}

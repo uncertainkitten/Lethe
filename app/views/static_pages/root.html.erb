@@ -1,0 +1,9 @@
+<%if logged_in?%>
+  <script type="text/javascript">
+    window.currentUser = <%= render(
+      "api/user.json.jbuilder",
+      user: current_user
+      ).html_safe %>
+  </script>
+<%end%>
+<main id="root"><h1>Rails is working! React is not!</h1></main>

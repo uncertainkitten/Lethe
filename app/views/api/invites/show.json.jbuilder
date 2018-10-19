@@ -1,0 +1,1 @@
+json.extract! @invite, :id, :url, :num_uses, :server_id, :server

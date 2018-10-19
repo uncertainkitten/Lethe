@@ -1,0 +1,68 @@
+.serverRegion{
+ display: flex;
+ width: 665px;
+ height: 480px;
+ position: absolute;
+ bottom: -45px;
+ right: -65px;
+ flex-flow: row wrap;
+ justify-items: flex-start;
+ align-items: flex-start;
+ background-color: #FFFFFF;
+ box-shadow: 2px 2px 5px 5px #2E3035;
+ border-radius: 5px;
+ z-index: 11;
+ padding-left: 25px;
+ padding-bottom: 30px;
+}
+
+.regionHeader {
+  color: #7289DA;
+  font-size: 12pt;
+  background-color: #FFFFFF;
+  width: 700px;
+  height: 40px;
+  margin-top: 10px;
+  font-weight: bolder;
+  text-align: center;
+  text-justify: center;
+  text-shadow: 1px 0px #7289DA;
+}
+
+
+.regionButton{
+  width: 120px;
+  height: 120px;
+  margin: 4px;
+  border: 1px solid #CCCCCC;
+  background-color: #FFFFFF;
+  box-shadow: 0;
+  border-radius: 4px;
+}
+
+.regionButton:hover {
+  border: 1px solid #0000FF;
+  cursor: pointer;
+}
+
+.selectFlag{
+  height: 30px;
+  width: 40px;
+  background-color: #770077;
+  border-radius: 4px;
+  border: 1px solid #770077;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.newRegion{
+  width: 30px;
+  height: 20px;
+  font-size: 12pt;
+  color: #AAAACC;
+  text-shadow: 1px 0px #AAAACC;
+  text-align: center;
+  text-justify: center;
+  background-color: #FFFFFF;
+}
+

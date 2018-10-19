@@ -1,0 +1,33 @@
+.messageIndex {
+  display: flex;
+  flex-flow: row wrap;
+  width: 1325px;
+  height: 730px;
+  align-items: flex-start;
+}
+
+.messages {
+  width: 1325px;
+  font-size: 20pt;
+  height: 650px;
+  text-align: center;
+}
+
+.messageInputWrapper {
+  border-top: 2px solid #42454a;
+  height: 80px;
+  width: 1275px;
+  display: flex;
+  align-items: flex-end;
+  justify-items: flex-start;
+  margin: 0px 25px;
+}
+
+.messageInput {
+  width: 1275px;
+  border: 1px solid #363933;
+  background-color: #484B52;
+  height: 20px;
+  margin: 15px 0px;
+  padding: 10px
+}

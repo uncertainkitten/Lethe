@@ -1,0 +1,74 @@
+.navLink {
+  margin: 10px 20px;
+  font-size: 10pt;
+  color: #B9BBBE;
+}
+
+.greetHeader {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.greeting{
+  display: flex;
+  width: 1900px;
+  height: 100px;
+  align-items: center;
+}
+
+.welcome {
+  font-size: 14pt;
+  flex-basis: 100%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  margin-left: auto;
+}
+
+.navLink:visited {
+  color: #B9BBBE;
+}
+
+.navLink:hover {
+  color: #FFFFFF;
+}
+
+.logoutBtn {
+  background-color: #36393F;
+  margin: 5px 20px;
+  color: #B9BBBE;
+  font-size: 10pt;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: none;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+
+.logoutBtn:hover {
+  color: #FFFFFF;
+}
+
+.openBtn {
+  width: 60px;
+  height: 23px;
+  border-radius: 40px;
+  border: 2px solid #B9BBBE;
+  color: #B9BBBE;
+  background-color: #36393F;
+  font-size: 10pt;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.openBtn:hover {
+  color: #FFFFFF;
+}
+
+.openBtn:visited {
+  color: #B9BBBE;
+}

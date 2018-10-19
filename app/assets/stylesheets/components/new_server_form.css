@@ -1,0 +1,428 @@
+.newServerWrapper {
+  display: flex;
+  position: absolute;
+  top: 200px;
+  right: 700px;
+  width: 520px;
+  height: 420px;
+  flex-flow: column wrap;
+  justify-items: center;
+  background-color: #DDEEFF;
+  box-shadow: 2px 2px 5px 5px #2E3035;
+  border-radius: 5px;
+  z-index: 6;
+}
+
+.newServerHeader {
+  color: #7289DA;
+  font-size: 12pt;
+  background-color: #DDEEFF;
+  width:  400px;
+  height: 20px;
+  margin: 5px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 27px 47px;
+  text-shadow: 1px 0px #7289DA;
+}
+
+.boxingRing {
+  display: flex;
+  flex-flow: row wrap;
+  height: 320px;
+  width: 500px;
+  align-items: flex-start;
+  justify-items: flex-start;
+  background-color: #DDEEFF;
+}
+
+.createBox {
+  margin-left: 25px;
+  margin-bottom: 35px;
+  margin-top: 0px;
+  width: 230px;
+  height: 300px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-flow: column wrap;
+  box-shadow: 1px 1px 1px 1px #B0B0B0;
+}
+
+.createBoxHeader {
+  background-color: #FFFFFF;
+  height: 10px;
+  width: 130px;
+  font-size: 14pt;
+  text-align: center;
+  padding: 30px 48px 30px 48px;
+  color: #7289DA;
+}
+
+.newBoxDescription {
+  background-color: #FFFFFF;
+  height: 20px;
+  width: 180px;
+  font-size: 9pt;
+  text-align: center;
+  text-justify: center;
+  color: #AAAACC;
+}
+
+.createBoxImage {
+  background-color: #FFFFFF;
+  height: 50px;
+  width: 50px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 50%;
+  border: 3px double #0000FF;
+  color: #770077;
+  padding: 25px;
+  box-shadow: 1px 1px 2px 2px #0077FF;
+  text-align: center;
+  text-justify: center;
+  font-size: 10pt;
+}
+
+.createServerBtn {
+  background-color: #7289DA;
+  color: #FFFFFF;
+  width: 210px;
+  height: 45px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 12pt;
+  box-shadow: 0;
+  border: 1px solid #7289DA;
+  text-align: center;
+  text-justify: center;
+  border-radius: 3px;
+}
+
+.createServerBtn:hover {
+  background-color: #677BC4;
+  cursor: pointer;
+}
+
+.fancyOr {
+  height: 20px;
+  width: 50px;
+  padding: 15px 0px;
+  z-index: 6;
+  border-left: 2px solid #B0B0B0;
+  border-right: 2px solid #B0B0B0;
+  font-size: 12pt;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  margin-left: -20px;
+  background-color: #FFFFFF;
+  text-align: center;
+  text-justify: center;
+  color: #AAAACC;
+  text-shadow: 1px 0px #7289DA;
+}
+
+.joinBox {
+  margin-bottom: 35px;
+  margin-top: 0px;
+  margin-left: -20px;
+  width: 230px;
+  height: 300px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-flow: column wrap;
+  box-shadow: 1px 1px 1px 1px #B0B0B0;
+}
+
+.joinBoxHeader {
+  background-color: #FFFFFF;
+  height: 10px;
+  width: 130px;
+  font-size: 14pt;
+  text-align: center;
+  padding: 30px 48px 30px 48px;
+  color: #40aa40;
+}
+
+.joinBoxImage {
+  background-color: #FFFFFF;
+  height: 50px;
+  width: 50px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 50%;
+  border: 3px double #00FF00;
+  color: #007777;
+  padding: 25px;
+  box-shadow: 1px 1px 2px 2px #77FF00;
+  text-align: center;
+  text-justify: center;
+  font-size: 10pt;
+}
+
+.joinServerBtn {
+  background-color: #00aa77;
+  color: #FFFFFF;
+  width: 210px;
+  height: 45px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 12pt;
+  box-shadow: 0;
+  border: 1px solid #00aa77;
+  text-align: center;
+  text-justify: center;
+  border-radius: 3px;
+}
+
+.joinServerBtn:hover {
+  background-color: #009977;
+  cursor: pointer;
+}
+
+.newServerForm {
+  display: flex;
+  position: absolute;
+  top: 200px;
+  right: 700px;
+  width: 520px;
+  height: 420px;
+  flex-flow: column wrap;
+  justify-items: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 5px 5px #2E3035;
+  border-radius: 5px;
+  z-index: 6;
+}
+
+.createServerHeader{
+  color: #7289DA;
+  font-size: 12pt;
+  background-color: #FFFFFF;
+  width: 400px;
+  height: 20px;
+  margin: 5px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 27px 47px;
+  text-shadow: 1px 0px #7289DA;
+}
+
+.createServerText {
+  margin-top: -20px;
+  background-color: #FFFFFF;
+  height: 40px;
+  width: 450px;
+  font-size: 13pt;
+  text-align: center;
+  text-justify: center;
+  color: #AAAACC;
+  margin-bottom: 5px;
+}
+
+.createServerForm {
+  display: flex;
+  flex-flow: column wrap;
+  height: 290px;
+  width: 450px;
+  align-items: flex-start;
+  justify-items: flex-start;
+  background-color: #FFFFFF;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.createServerLabel {
+  font-size: 8pt;
+  color: #AAAACC;
+  text-shadow: 1px 0px #AAAACC;
+  width: 270px;
+  background-color: #FFFFFF;
+  height: 25px;
+}
+
+.serverText{
+  height: 30px;
+  width: 250px;
+  border-bottom: 1px solid #B0B0B0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  color: black;
+  font-size: 12pt;
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+  box-shadow: 0;
+}
+
+.serverText:focus{
+  border-bottom: 2px solid #7289DA;
+  border-top: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+}
+
+.newServerRegion{
+  height: 50px;
+  width: 250px;
+  background-color: #FFFFFF;
+  border: 1pt solid #B0B0B0;
+  border-radius: 4px;
+  box-shadow: 0;
+  margin-bottom: 15px;
+}
+
+.selectedRegion{
+  display: flex;
+  width: 240px;
+  height: 46px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-items: flex-start;
+  background-color: #FFFFFF;
+  z-index: 7;
+  margin-left: 2px;
+}
+
+.region{
+  color: #AAAACC;
+  background-color: #FFFFFF;
+  font-size: 12pt;
+  text-shadow: 1px 0px #AAAACC;
+  width: 130px;
+  height: 35px;
+  border-right: 1px solid #B0B0B0;
+  padding-top: 15px;
+  margin-left: 5px;
+}
+
+.aFlag{
+  height: 25px;
+  width: 40px;
+  background-color: #770077;
+  border-radius: 4px;
+  border: 1px solid #770077;
+  padding-top: 3px;
+  margin-top: 10px;
+  margin-left: 4px;
+}
+
+.regionBtnText{
+  font-size: 10pt;
+  color: #7289DA;
+  background-color: #FFFFFF;
+  height: 32px;
+  width: 51px;
+  text-align: center;
+  padding: 18px 6px 1px 10px;
+  border-radius: 4px;
+  margin-right: -10px;
+}
+
+.regionBtnText:hover{
+  color: #FFFFFF;
+  background-color: #7289DA;
+}
+
+.newServerRegion:hover{
+  cursor: pointer;
+  border: 1pt solid #7289DA;
+}
+
+.sm0lText{
+  background-color: #FFFFFF;
+  font-size: 7pt;
+  color: #AAAACC;
+  width: 200px;
+  height: 15px;
+}
+
+.sm0lLink{
+  background-color: #FFFFFF;
+  font-size: 7pt;
+  color: #7289DA;
+  width: 250px;
+  height: 20px
+}
+
+.sm0lLink:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.uploadServerIcon{
+  height: 130px;
+  width: 130px;
+  border: 5px solid #DDDDDD;
+  border-radius: 50%;
+  background-color: #660066;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.uploadServerIcon:hover{
+  box-shadow: inset 0em 0em 1em 1em #2E3035;
+  cursor: pointer;
+}
+
+.serverBold{
+  font-weight: bold;
+  background-color: white;
+  color: #AAAACC;
+}
+
+.serverFormBtns{
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 520px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #EEEEEE;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  margin-left: -315px;
+}
+
+.submitCreateServer{
+  height: 40px;
+  width: 90px;
+  background-color: #7289DA;
+  color: #FFFFFF;
+  font-size: 12pt;
+  box-shadow: 0;
+  border: 1px solid #7289DA;
+  text-align: center;
+  text-justify: center;
+  border-radius: 3px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+.submitCreateServer:hover {
+  background-color: #677BC4;
+  cursor: pointer;
+}
+
+.serverGoBack{
+  height: 30px;
+  width: 100px;
+  background-color: #FFFFFF;
+  color: #AAAACC;
+  box-shadow: 0;
+  border: 1px solid #FFFFFF;
+  font-size: 9pt;
+  text-align: center;
+  text-justify: center;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.serverGoBack:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}

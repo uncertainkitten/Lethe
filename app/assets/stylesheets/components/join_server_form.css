@@ -1,0 +1,119 @@
+.joinServerContainer {
+  display: flex;
+  position: absolute;
+  top: 200px;
+  right: 700px;
+  width: 520px;
+  height: 420px;
+  flex-flow: column wrap;
+  justify-items: center;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 5px 5px #2E3035;
+  border-radius: 5px;
+  z-index: 6;
+}
+
+.joinServerHeader {
+  color: #40aa40;
+  text-shadow: 1px 0px #40aa40;
+  font-size: 12pt;
+  background-color: #FFFFFF;
+  width: 450px;
+  height: 50px;
+  padding-top: 30px;
+  padding-left: 30px;
+  font-weight: bolder;
+  text-align: center;
+  text-justify: center;
+}
+
+.joinServerText{
+  color: #7289DA;
+  font-size: 12pt;
+  background-color: #FFFFFF;
+  width: 450px;
+  height: 20px;
+  text-align: center;
+  text-justify: center;
+  padding-left: 30px;
+}
+
+.exampleInvite{
+  background-color: #FFFFFF;
+  font-size: 9pt;
+  color: #7289DA;
+  width: 450px;
+  height: 15px;
+  text-align: center;
+  text-justify: center;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.joinServerForm {
+  display: flex;
+  flex-flow: column wrap;
+  height: 200px;
+  width: 400px;
+  align-items: center;
+  justify-items: center;
+  background-color: #FFFFFF;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.inviteText {
+  height: 30px;
+  width: 350px;
+  border-bottom: 1px solid #B0B0B0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  color: black;
+  font-size: 12pt;
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+  box-shadow: 0;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+.inviteText:focus {
+  border-bottom: 2px solid #7289DA;
+  border-top: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+}
+
+.submitJoinServer {
+  height: 35px;
+  width: 95px;
+  background-color: #00aa77;
+  color: #FFFFFF;
+  font-size: 12pt;
+  box-shadow: 0;
+  border: 1px solid #00aa77;
+  text-align: center;
+  text-justify: center;
+  border-radius: 3px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+.submitJoinServer:hover {
+  background-color: #009977;
+  cursor: pointer;
+}
+
+.joinFormBtns {
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+  width: 520px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #EEEEEE;
+  background-color: #FFFFFF;
+  margin-top: 50px;
+  margin-left: 80px;
+}

@@ -1,0 +1,99 @@
+.relativity {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  left: 40px;
+}
+
+.upMenu {
+  display: flex;
+  flex-flow: column wrap;
+  width: 200px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+  z-index: 6;
+}
+
+.downMenu {
+  display: flex;
+  flex-flow: column wrap;
+  width: 200px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  z-index: 6;
+}
+
+
+.contextMenu {
+  background-color: #202225;
+  width: 198px;
+  border: 1px solid #202225;
+}
+
+.contextItemWBorder {
+  border-bottom: 1px solid #42454a;
+  background-color: #202225;
+  width: 190px;
+  padding: 8px;
+  font-size: 9pt;
+  box-shadow: none;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  color: #B9BBBE;
+  text-align: left;
+}
+
+.contextItem {
+  background-color: #202225;
+  width: 190px;
+  padding: 8px;
+  border: 1px solid #202225;
+  font-size: 9pt;
+  box-shadow: none;
+  color: #B9BBBE;
+  text-align: left;
+}
+
+.leaveServer {
+  background-color: #202225;
+  border-bottom: 1px solid #42454a;
+  color: #991111;
+  font-size: 9pt;
+  box-shadow: none;
+  width: 190px;
+  padding: 8px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  text-align: left;
+}
+
+.menuContextItem {
+  background-color: #202225;
+  width: 180px;
+  padding: 8px;
+  border: 1px solid #202225;
+  font-size: 9pt;
+  box-shadow: none;
+  color: #B9BBBE;
+  text-align: left;
+}
+
+.contextItem:hover {
+  background-color: black;
+}
+
+.contextItemWBorder:hover {
+  background-color: black;
+}
+
+.menuContextItem:hover {
+  background-color: black;
+}
+
+.leaveServer:hover {
+  background-color: black;
+}

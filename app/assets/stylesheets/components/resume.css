@@ -1,0 +1,52 @@
+.resume {
+  display: flex;
+  width: 720px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  box-shadow: 1px 1px 6px 6px #2E3035;
+  border: 3px double #7289DA;
+  padding: 40px;
+}
+
+.resumeName {
+  font-size: 24pt;
+  padding-top: 10px;
+  padding-left: 200px;
+  flex-basis: 100%;
+  border-top: 3px double #FFFFFF;
+}
+
+.resumeTagline {
+  font-size: 10pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10%;
+  flex-basis: 40%;
+  border-bottom: 3px double #FFFFFF;
+}
+
+.resumeHeading {
+  font-size: 18pt;
+  text-decoration: underline;
+  flex-basis: 100%;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.resumeList {
+  padding-bottom: 5px;
+  padding-left: 40px;
+  list-style-type: circle;
+}
+
+.resumeListItem {
+  font-size: 10pt;
+  padding: 3px;
+}
+.resumeItem {
+  font-size: 12pt;
+  font-style: italic;
+  flex-basis: 100%;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
