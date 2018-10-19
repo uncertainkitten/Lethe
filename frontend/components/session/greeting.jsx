@@ -7,18 +7,24 @@ class Greeting extends React.Component {
   constructor(props) {
     super(props)
     this.handleLogout = this.handleLogout.bind(this);
-    this.state = {errors: this.props.errors, loggedIn: this.props.loggedIn, server: this.props.currentServer}
+    this.state = {errors: this.props.errors, loggedIn: this.props.loggedIn, server: this.props.currentServer, channel: this.props.currentChannel}
   }
 
   componentDidMount() {
     if (this.props.currentUser){
       this.props.fetchServersByUser(this.props.currentUser.id);
+    } else if (this.props.currentServer) {
+      this.props.fetchChannels(this.props.currentServer.id);
     }
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.currentServer !== nextProps.currentServer) {
-      this.setState({server: nextProps.currentServer})
+      this.setState({server: nextProps.currentServer});
+    }
+
+    if (this.props.currentChannel !== nextProps.currentChannel) {
+      this.setState({channel: nextProps.currentChannel});
     }
   }
 
@@ -29,10 +35,18 @@ class Greeting extends React.Component {
   render () {
     let classRight = classNames({navLink: true, right: true});
     let server;
+    let channel;
+
     if (this.state.server) {
       server = this.state.server
+      if (this.state.channel) {
+       channel = this.state.channel;
+      } else {
+        channel = "";
+      }
     } else {
-      server = ""
+      server = "";
+      channel = "";
     }
 
     if (this.props.loggedIn) {
@@ -50,7 +64,7 @@ class Greeting extends React.Component {
           <div className="right">
             <Link className="navLink" to="/language">Language</Link>
             <Link to="/login"><button className="logoutBtn" onClick={this.handleLogout}>Log Out</button></Link>
-            <Link to={`/servers/${server.id}`} className="openBtn">Open</Link>
+            <Link to={`/servers/${server.id}/channels/${channel.id}`} className="openBtn">Open</Link>
           </div>
         </header>
         <p className="welcome">Welcome, {this.props.currentUser.username}</p>

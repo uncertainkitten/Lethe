@@ -1,5 +1,6 @@
 import {RECEIVE_SERVER, REMOVE_SERVER, RECEIVE_USER_SERVERS} from '../actions/server_actions';
 import {REMOVE_MEMBERSHIP} from '../actions/membership_actions';
+import {RECEIVE_INVITE} from '../actions/invite_actions';
 import {merge} from 'lodash';
 
 const serverReducer = (state = {}, action) => {
