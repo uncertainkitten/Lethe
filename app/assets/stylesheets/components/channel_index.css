@@ -37,3 +37,13 @@
   background-color: #2F3136;
   font-size: 11pt;
 }
+
+.selectedChannelItem{
+  width: 230px;
+  background-color: #111111;
+  font-size: 11pt;
+}
+
+.channelItem:hover{
+  cursor: pointer;
+}
