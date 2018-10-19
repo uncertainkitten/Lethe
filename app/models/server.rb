@@ -34,5 +34,11 @@ class Server < ApplicationRecord
   class_name: :Invite,
   dependent: :destroy
 
+  has_many :channels,
+  primary_key: :id,
+  foreign_key: :server_id,
+  class_name: :Channel,
+  dependent: :destroy
+
   has_one_attached :icon
 end
