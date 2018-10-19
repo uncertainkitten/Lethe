@@ -1,26 +1,22 @@
 .channelIndex {
   width: 240px;
   background-color: #2F3136;
-  height: 800px;
+  height: 780px;
   margin-top: 10px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-flow: column wrap;
-  position: absolute;
-  left: 100px;
 }
 
 .channelList {
-  height: 750px;
+  height: 760px;
   background-color: #2F3136;
   margin-left: 10px;
   overflow-y: scroll;
   display: flex;
   flex-flow: column wrap;
   width: 240px;
-  position: relative;
-  top: 20px;
 }
 
 .channelList::-webkit-scrollbar{
@@ -31,14 +27,14 @@
 }
 
 .channelItemContainer{
-  width: 220px;
+  width: 240px;
   background-color: #2F3136;
   height: 40px;
   margin-left: 10px;
 }
 
 .channelItem{
-  width: 210px;
+  width: 230px;
   background-color: #2F3136;
   font-size: 12pt;
   padding: 10px;

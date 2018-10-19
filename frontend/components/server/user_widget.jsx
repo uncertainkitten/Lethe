@@ -2,7 +2,6 @@ import React from 'react';
 
 class UserWidget extends React.Component{
   render () {
-    console.log("WIDGET");
     return (
       <div className="userWidget">
         <div className="userAvatar">Avy</div>

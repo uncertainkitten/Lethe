@@ -96,8 +96,6 @@
   font-size: 12pt;
   height: 20px;
   padding: 15px;
-  position: absolute;
-  z-index: 3;
 }
 
 .channelName {

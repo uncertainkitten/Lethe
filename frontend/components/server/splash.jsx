@@ -24,6 +24,7 @@ class Splash extends React.Component {
         <ServerIndexContainer />
       </div>
       <div className="channelContainer">
+        <ChannelIndexContainer />
       </div>
       <div className="messageContainer">
         <MessageIndex />

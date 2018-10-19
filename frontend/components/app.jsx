@@ -8,7 +8,6 @@ import Resume from './session/resume';
 import SplashContainer from './server/splash_container';
 import ServerHeaderContainer from './server/server_header_container';
 import { AuthRoute, ProtectedRoute }from '../util/route_util';
-import ChannelIndexContainer from './server/channel_index_container';
 
 
 const App = () => (
@@ -20,7 +19,6 @@ const App = () => (
         </Switch>
       </header>
       <ProtectedRoute path='/servers' component={SplashContainer} />
-      <ProtectedRoute path='/servers/:serverId/channels' component={ChannelIndexContainer} />
       <div className="authWrapper">
       <Switch>
         <AuthRoute path='/login' component={LoginFormContainer} />

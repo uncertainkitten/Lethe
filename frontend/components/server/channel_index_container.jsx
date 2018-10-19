@@ -6,8 +6,7 @@ import ChannelIndex from './channel_index';
 const mapStateToProps = (state, ownProps) => ({
   channels: Object.values(state.entities.channels),
   mode: state.ui.mode.id,
-  currentUser: state.entities.users[state.session.id],
-  serverId: ownProps.match.params.serverId
+  currentUser: state.entities.users[state.session.id]
 })
 
 const mapDispatchToProps = dispatch => ({

@@ -1,22 +1,31 @@
 import React from 'react';
 import UserWidget from './user_widget';
 import ChannelIndexItem from './channel_index_item';
+import {withRouter} from 'react-router-dom';
 
 class ChannelIndex extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      channels: this.props.channels
+    }
   }
 
   componentDidMount() {
-    if (this.props.serverId) {
-      this.props.fetchChannels(this.props.serverId);
+    this.props.fetchChannels(this.props.match.params.id);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.match.params.id !== this.props.match.params.id) {
+      this.props.fetchChannels(this.props.match.params.id);
+      this.setState({channels: this.props.channels});
     }
   }
 
   render() {
     let channelItems;
 
-    if (this.props.channels ){
+    if (this.props.channels){
     channelItems = this.props.channels.map(channel => <ChannelIndexItem
       key={channel.id}
       channel={channel}
@@ -39,4 +48,4 @@ class ChannelIndex extends React.Component {
   }
 }
 
-export default ChannelIndex;
+export default withRouter(ChannelIndex);
