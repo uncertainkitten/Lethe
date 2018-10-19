@@ -18,8 +18,9 @@
 .channelContainer {
   width: 250px;
   background-color:#2F3136;
-  height: 820px;
+  height: 830px;
   border-bottom: 1px solid #282A2F;
+  margin-top: -10px;
 }
 
 .messageContainer {
@@ -58,7 +59,7 @@
   background-color: #2F3136;
   color: #2F3136;
   width: 250px;
-  height: 110px;
+  height: 100px;
 }
 
 .userIcon {

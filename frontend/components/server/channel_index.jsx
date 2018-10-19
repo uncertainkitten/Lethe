@@ -6,9 +6,6 @@ import {withRouter} from 'react-router-dom';
 class ChannelIndex extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      channels: this.props.channels
-    }
   }
 
   componentDidMount() {
@@ -18,7 +15,6 @@ class ChannelIndex extends React.Component {
   componentDidUpdate(prevProps) {
     if (prevProps.match.params.id !== this.props.match.params.id) {
       this.props.fetchChannels(this.props.match.params.id);
-      this.setState({channels: this.props.channels});
     }
   }
 

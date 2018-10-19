@@ -3,6 +3,7 @@ import ServerIndexContainer from './server_index_container';
 import ChannelIndexContainer from './channel_index_container';
 import MessageIndex from './message_index';
 import UserIndex from './user_index';
+import {withRouter} from 'react-router-dom';
 
 class Splash extends React.Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class Splash extends React.Component {
         <ServerIndexContainer />
       </div>
       <div className="channelContainer">
-        <ChannelIndexContainer />
+        <ChannelIndexContainer currentServerId={this.props.currentServerId}/>
       </div>
       <div className="messageContainer">
         <MessageIndex />
@@ -36,4 +37,4 @@ class Splash extends React.Component {
   }
 }
 
-export default Splash;
+export default withRouter(Splash);

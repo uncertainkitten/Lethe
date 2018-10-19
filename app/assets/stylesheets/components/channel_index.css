@@ -1,8 +1,7 @@
 .channelIndex {
   width: 240px;
   background-color: #2F3136;
-  height: 780px;
-  margin-top: 10px;
+  height: 830px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -10,7 +9,7 @@
 }
 
 .channelList {
-  height: 760px;
+  height: 780px;
   background-color: #2F3136;
   margin-left: 10px;
   overflow-y: scroll;
