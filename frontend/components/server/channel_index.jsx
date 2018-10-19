@@ -9,7 +9,7 @@ class ChannelIndex extends React.Component {
 
   componentDidMount() {
     if (this.props.serverId) {
-    this.props.fetchChannels(this.props.serverId);
+      this.props.fetchChannels(this.props.serverId);
     }
   }
 
@@ -24,7 +24,8 @@ class ChannelIndex extends React.Component {
       breakChannel={this.props.breakChannel}
       mode={this.props.mode}
       openModal={this.props.openModal}
-      closeModal={this.props.closeModal}/>
+      closeModal={this.props.closeModal}
+      fetchChannel={this.props.fetchChannel}/>
     );} else {
       channelItems = "";
     }

@@ -26,11 +26,12 @@
   width: 1325px;
   height: 820px;
   border-bottom: 1px solid #282A2F;
+  z-index: 10;
 }
 
 .userContainer {
   width: 224px;
-  height: 820px;
+  height: 800px;
   background-color:#2F3136;
   border-right: 1px solid #282A2F;
   border-bottom: 1px solid #282A2F;
@@ -42,6 +43,7 @@
   flex-direction: row;
   height: 100px;
   margin: 0 auto;
+  position: absolute;
 }
 
 .bg-box {
@@ -88,12 +90,14 @@
 }
 
 .serverMenu {
-  width: 250px;
+  width: 220px;
   box-shadow: -1px 2px 2px #282A2F;
   background-color: #2F3136;
   font-size: 12pt;
   height: 20px;
   padding: 15px;
+  position: absolute;
+  z-index: 3;
 }
 
 .channelName {
@@ -126,7 +130,7 @@
 
 .pinMessage{
   font-size: 12pt;
- padding: 15px 10px;
+  padding: 15px 10px;
   color: #5E6054;
   height: 20px;
 }

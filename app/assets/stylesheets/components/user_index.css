@@ -1,18 +1,21 @@
 .userIndex {
   display: flex;
   flex-flow: column wrap;
-  width: 224px;
-  height: 740px;
+  width: 250px;
+  height: 830px;
   align-items: flex-start;
   background-color: #2F3136;
-  margin-top: -22px;
   border-right: 1px solid #282A2F;
+  z-index: 10;
+  position: absolute;
+  right: 20px;
+  top: 50px;
 }
 
 .userList {
   background-color: #2F3136;
   margin-left: 10px;
-  width: 210px;
+  width: 190px;
 }
 
 .userItem {

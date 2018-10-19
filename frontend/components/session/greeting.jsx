@@ -40,7 +40,7 @@ class Greeting extends React.Component {
     if (this.state.server) {
       server = this.state.server
       if (this.state.channel) {
-       channel = this.state.channel;
+       channel = "channels";
       } else {
         channel = "";
       }
@@ -64,7 +64,7 @@ class Greeting extends React.Component {
           <div className="right">
             <Link className="navLink" to="/language">Language</Link>
             <Link to="/login"><button className="logoutBtn" onClick={this.handleLogout}>Log Out</button></Link>
-            <Link to={`/servers/${server.id}/channels/${channel.id}`} className="openBtn">Open</Link>
+            <Link to={`/servers/${server.id}/{channels}`} className="openBtn">Open</Link>
           </div>
         </header>
         <p className="welcome">Welcome, {this.props.currentUser.username}</p>

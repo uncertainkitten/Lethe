@@ -20,7 +20,7 @@ const App = () => (
         </Switch>
       </header>
       <ProtectedRoute path='/servers' component={SplashContainer} />
-      <ProtectedRoute path='/servers/:serverId/channels/:id' component={ChannelIndexContainer} />
+      <ProtectedRoute path='/servers/:serverId/channels' component={ChannelIndexContainer} />
       <div className="authWrapper">
       <Switch>
         <AuthRoute path='/login' component={LoginFormContainer} />

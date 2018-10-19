@@ -1,6 +1,6 @@
 import React from 'react';
 import ServerIndexContainer from './server_index_container';
-import ChannelIndex from './channel_index';
+import ChannelIndexContainer from './channel_index_container';
 import MessageIndex from './message_index';
 import UserIndex from './user_index';
 
@@ -24,7 +24,6 @@ class Splash extends React.Component {
         <ServerIndexContainer />
       </div>
       <div className="channelContainer">
-        <ChannelIndex />
       </div>
       <div className="messageContainer">
         <MessageIndex />
