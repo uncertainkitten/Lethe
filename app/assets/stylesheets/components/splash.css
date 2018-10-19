@@ -25,17 +25,18 @@
 
 .messageContainer {
   width: 1325px;
-  height: 820px;
+  height: 810px;
   border-bottom: 1px solid #282A2F;
-  z-index: 10;
 }
 
 .userContainer {
   width: 224px;
-  height: 800px;
+  height: 850px;
   background-color:#2F3136;
   border-right: 1px solid #282A2F;
   border-bottom: 1px solid #282A2F;
+  margin-top: -26px;
+  z-index: 9;
 }
 
 .serverHeader {
@@ -44,7 +45,6 @@
   flex-direction: row;
   height: 100px;
   margin: 0 auto;
-  position: absolute;
 }
 
 .bg-box {

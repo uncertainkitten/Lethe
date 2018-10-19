@@ -8,12 +8,12 @@
   align-content: center;
 }
 
-.userAvatar {
+.userThreeAvatar {
   height: 20px;
   width: 20px;
   border: 1px solid black;
   border-radius: 50%;
-  font-size: 7pt;
+  font-size: 22pt;
   text-align: center;
   padding: 10px 5px 0px 5px;
   margin-top: 10px;
@@ -72,4 +72,14 @@
   background-color: #2A2C31;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.userAvatar {
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 7pt;
+  text-align: center;
+  padding: 10px 5px 0px 5px;
 }

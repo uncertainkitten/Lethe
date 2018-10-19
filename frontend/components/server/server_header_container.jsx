@@ -9,7 +9,7 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchServer: (serverId) => dispatch(fetchServer(serverId))
+  fetchServer: (serverId) => dispatch(fetchServer(serverId)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ServerHeader);

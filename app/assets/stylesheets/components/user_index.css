@@ -1,26 +1,33 @@
 .userIndex {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   width: 250px;
   height: 830px;
   align-items: flex-start;
   background-color: #2F3136;
   border-right: 1px solid #282A2F;
-  z-index: 10;
-  position: absolute;
-  right: 20px;
-  top: 50px;
 }
 
 .userList {
   background-color: #2F3136;
   margin-left: 10px;
   width: 190px;
+  z-index: 11;
+}
+
+.userIndexItemContainer {
+  background-color: #2F3136;
+  margin-left: 10px;
+  width: 239px;
+  z-index: 12;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .userItem {
   background-color: #2F3136;
-  width: 175px;
+  width: 110px;
   padding: 10px;
   font-size: 12pt;
+  z-index: 13;
 }

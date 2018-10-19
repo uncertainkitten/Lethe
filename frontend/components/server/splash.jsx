@@ -2,7 +2,7 @@ import React from 'react';
 import ServerIndexContainer from './server_index_container';
 import ChannelIndexContainer from './channel_index_container';
 import MessageIndex from './message_index';
-import UserIndex from './user_index';
+import UserIndexContainer from './user_index_container';
 import {withRouter, Route} from 'react-router-dom';
 
 class Splash extends React.Component {
@@ -31,7 +31,7 @@ class Splash extends React.Component {
         <MessageIndex />
       </div>
       <div className="userContainer">
-        <UserIndex />
+        <Route path='/servers/:id' component={UserIndexContainer} />
       </div>
     </div>);
   }
