@@ -1,7 +1,7 @@
 .splash {
   display: flex;
   width: 1900px;
-  height: 740px;
+  height: 820px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-flow: row wrap;
@@ -11,26 +11,26 @@
 .serverContainer {
   width: 100px;
   background-color: #202225;
-  height: 740px;
+  height: 820px;
   border-bottom: 1px solid #282A2F;
 }
 
 .channelContainer {
   width: 250px;
   background-color:#2F3136;
-  height: 730px;
+  height: 820px;
   border-bottom: 1px solid #282A2F;
 }
 
 .messageContainer {
   width: 1325px;
-  height: 740px;
+  height: 820px;
   border-bottom: 1px solid #282A2F;
 }
 
 .userContainer {
   width: 224px;
-  height: 740px;
+  height: 820px;
   background-color:#2F3136;
   border-right: 1px solid #282A2F;
   border-bottom: 1px solid #282A2F;

@@ -1,12 +1,12 @@
 import {connect} from 'react-redux';
 import InviteItem from './invite_item';
 import {fetchInvites, fetchInvite, makeInvite, useInvite} from '../../actions/invite_actions';
-import {getInvite} from '../../reducers/selectors';
+import {getInvite, getServerInvites} from '../../reducers/selectors';
 
 const mapStateToProps = (state, ownProps) => ({
-  invites: state.entities.invites,
+  invites: getServerInvites(state, ownProps.server.id),
   toggleInvite: ownProps.toggleInvite,
-  invite: getInvite(state)
+  invite: getInvite(state, ownProps.server.id)
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -10,6 +10,7 @@ class ServerContextMenu extends React.Component {
     }
     this.handleLeave = this.handleLeave.bind(this);
     this.handleInvite = this.handleInvite.bind(this);
+    this.handleBreak = this.handleBreak.bind(this);
   }
 
   componentDidMount() {
@@ -21,12 +22,23 @@ class ServerContextMenu extends React.Component {
     this.props.leaveServer(this.props.membershipId);
   }
 
+  handleBreak(e) {
+    e.stopPropagation();
+    this.props.breakServer(this.props.server.id);
+  }
+
   handleInvite(e) {
     e.stopPropagation();
     this.props.toggleInvite()
   }
 
   render () {
+    let leaveDelete;
+    if (this.props.currentUser.id === this.state.server.owner_id) {
+      leaveDelete = <button className="leaveServer" onClick={this.handleBreak}>Delete Server</button>
+    } else {
+      leaveDelete = <button className="leaveServer" onClick={this.handleLeave}>Leave Server</button>
+    }
     return (
       <div className={this.props.menuClass}>
         <div className="contextMenu">
@@ -38,7 +50,7 @@ class ServerContextMenu extends React.Component {
           <button className="contextItem">Notification Settings</button>
           <button className="contextItem">Privacy Settings</button>
           <button className="contextItemWBorder">Change Nickname</button>
-          <button className="leaveServer" onClick={this.handleLeave}>Leave Server</button>
+          {leaveDelete}
           <button className="contextItem">Copy Id</button>
           <div className="error">{this.state.broke}</div>
         </div>

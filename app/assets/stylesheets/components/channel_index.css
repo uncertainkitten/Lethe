@@ -5,7 +5,7 @@
   flex-flow: column wrap;
   align-items: flex-start;
   justify-items: flex-start;
-  height: 730px;
+  height: 800px;
   margin-top: 10px;
 }
 
@@ -14,7 +14,7 @@
   background-color: #2F3136;
   margin-left: 10px;
   overflow-y: scroll;
-  height: 680px;
+  height: 760px;
 }
 
 .channelList::-webkit-scrollbar{

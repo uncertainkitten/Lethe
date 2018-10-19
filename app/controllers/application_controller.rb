@@ -13,7 +13,6 @@ class ApplicationController < ActionController::Base
   def target_membership 
     @target_membership ||= Membership.find_by(id: params[:id])
   end
-    
 
   def logged_in?
     !!current_user

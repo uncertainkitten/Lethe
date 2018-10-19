@@ -2,14 +2,14 @@
   display: flex;
   flex-flow: row wrap;
   width: 1325px;
-  height: 730px;
+  height: 850px;
   align-items: flex-start;
 }
 
 .messages {
   width: 1325px;
   font-size: 20pt;
-  height: 650px;
+  height: 700px;
   text-align: center;
 }
 

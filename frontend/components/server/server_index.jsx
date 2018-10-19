@@ -53,7 +53,8 @@ class ServerIndex extends React.Component {
       closeModal={this.props.closeModal}
       memberList={this.props.memberList}
       members={this.props.members}
-      fetchServersByUser={this.props.fetchServersByUser}/>);
+      fetchServersByUser={this.props.fetchServersByUser}
+      breakServer={this.props.breakServer}/>);
     return (
     <div className="serverIndex">
       <span className="numOnline">X online</span>

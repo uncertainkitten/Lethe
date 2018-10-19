@@ -64,7 +64,7 @@
 }
 
 .serverList {
-  height: 680px;
+  height: 730px;
   background-color: #202225;
   color: #202225;
   overflow-y: scroll;
@@ -74,15 +74,10 @@
 .serverList::-webkit-scrollbar {
   -webkit-appearance: none;
   display: none;
-  -webkit-transform: translateZ(0px)
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
 }
 
 .serverItem {
   background-color: #202225;
-}
-
-.dropdown {
-  z-index: 3;
-  width: 200px;
-  height: 200px;
 }

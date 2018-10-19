@@ -95,7 +95,7 @@ class EditInvite extends React.Component{
   handleSubmit(e) {
     e.preventDefault();
     this.props.makeInvite(this.props.server.id, {num_uses: this.state.numUses});
-    this.toggleEdit();
+    this.props.toggleEdit();
   }
 
   render() {

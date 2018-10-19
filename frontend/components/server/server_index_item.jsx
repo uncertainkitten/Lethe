@@ -45,6 +45,7 @@ class ServerIndexItem extends React.Component{
     e.preventDefault();
     if (this.props.server.id !== this.state.mode) {
       this.checkPosition(e);
+      this.props.fetchServer(this.props.server.id);
       this.props.openModal(this.props.server.id);
     } else {
       this.props.closeModal();
@@ -72,7 +73,8 @@ class ServerIndexItem extends React.Component{
       fetchServersByUser={this.props.fetchServersByUser}
       fetchServer={this.props.fetchServer}
       toggleInvite={this.toggleInvite}
-      invite={this.state.invite}/>
+      invite={this.state.invite}
+      breakServer={this.props.breakServer}/>
     } else {
       context = "";
     }

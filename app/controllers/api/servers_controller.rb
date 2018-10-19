@@ -54,7 +54,7 @@ class Api::ServersController < ApplicationController
     end
 
     if @server.destroy
-      render json: :show
+      render json: {}
     else
       render json: @server.errors.full_messages, status: 418
     end
