@@ -10,7 +10,6 @@ const mapStateToProps = (state, ownProps)=> {
     loggedIn = false
   }
   let mode = state.ui.mode.id;
-  let currentServerId = ownProps.match.params.id
   return ({loggedIn, mode});
 }
 

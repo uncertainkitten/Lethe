@@ -8,7 +8,7 @@ const mapStateToProps = (state, ownProps) => ({
   channels: Object.values(state.entities.channels),
   mode: state.ui.mode.id,
   currentUser: state.entities.users[state.session.id],
-  currentServerId: ownProps.currentServerId
+  currentServerId: ownProps.match.params.id
 })
 
 const mapDispatchToProps = dispatch => ({

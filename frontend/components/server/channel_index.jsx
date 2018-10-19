@@ -6,15 +6,22 @@ import {withRouter} from 'react-router-dom';
 class ChannelIndex extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      channels: this.props.channels,
+      currentServerId: this.props.currentServerId
+    }
   }
 
   componentDidMount() {
-    this.props.fetchChannels(this.props.match.params.id);
+    if (this.props.currentServerId) {
+      this.props.fetchChannels(this.state.currentServerId);
+    }
   }
 
-  componentDidUpdate(prevProps) {
-    if (prevProps.match.params.id !== this.props.match.params.id) {
-      this.props.fetchChannels(this.props.match.params.id);
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.currentServerId !== this.props.currentServerId) {
+      this.props.fetchChannels(nextProps.currentServerId);
+      this.setState({channels: this.props.channels, currentServerId: nextProps.currentServerId})
     }
   }
 
@@ -38,7 +45,7 @@ class ChannelIndex extends React.Component {
     return (
       <div className="channelIndex">
         <ul className="channelList">{channelItems}</ul>
-        <UserWidget />
+        <UserWidget currentUser={this.props.currentUser} />
       </div>
       );
   }

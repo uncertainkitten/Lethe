@@ -29,12 +29,11 @@
   width: 240px;
   background-color: #2F3136;
   height: 40px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .channelItem{
   width: 230px;
   background-color: #2F3136;
-  font-size: 12pt;
-  padding: 10px;
+  font-size: 11pt;
 }
