@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
-import {fetchServersByUser} from './actions/server_actions'
+import {getChannels, getChannel, postChannel, deleteChannel} from './util/channel_api_util';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
@@ -22,7 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // TESTS
-  window.fetchServersByUser = fetchServersByUser;
+  window.getChannels = getChannels;
+  window.getChannel = getChannel;
+  window.postChannel = postChannel;
+  window.deleteChannel = deleteChannel;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
   //END TESTS

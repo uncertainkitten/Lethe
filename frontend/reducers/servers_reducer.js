@@ -20,6 +20,8 @@ const serverReducer = (state = {}, action) => {
       Object.assign(newMemberState, state);
       delete newMemberState[action.membership.server_id];
       return newMemberState;
+    case RECEIVE_INVITE:
+      return merge({}, state, {[action.server.id]: action.server});
     default:
       return state;
   }

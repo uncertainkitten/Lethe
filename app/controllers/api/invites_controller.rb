@@ -1,4 +1,6 @@
 class Api::InvitesController < ApplicationController
+  before_action :require_login
+
   def index
     @invites = Invite.all
     render :index

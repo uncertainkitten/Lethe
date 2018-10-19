@@ -1,4 +1,6 @@
 class Api::ChannelsController < ApplicationController
+  before_action :require_login
+
   def index
     @server = Server.find_by(id: params[:server_id])
 
@@ -38,6 +40,7 @@ class Api::ChannelsController < ApplicationController
 
     if @channel
       @channel.destroy
+      render json: {}
     else
       render json: ["Channel not found"], status: 404
     end
