@@ -102,7 +102,7 @@
 }
 
 .deeElButton{
-  background-color: #B9BBBE;
+  background-color: #EBEEEF;
   padding: 20px;
   margin: 30px 40px 10px 10px;
   color: black;
@@ -129,6 +129,14 @@
   cursor: pointer;
   height: 15px;
   text-align: center;
+}
+
+.fancyContainer{
+  flex-basis: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-content:center;
 }
 
 .fancy {
@@ -158,4 +166,92 @@
   flex-direction: row;
   justify-content: center;
   align-content: space-around;
+}
+
+.footerBox{
+  display: flex;
+  flex-basis: 15%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.footerHeader{
+  font-weight: 700;
+  font-size: 10pt;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.bigfootText{
+  font-size: 16pt;
+  font-weight: 400;
+  color: #FFFFFF;
+  height: 30px;
+  padding-top: 30px;
+}
+
+.sm0lfootText{
+  font-size: 10pt;
+  color: #FFFFFF;
+  padding-top: 10px;
+}
+
+.footerFooter{
+  border-top: 1px solid #97999C;
+  display: flex;
+  flex-basis: 80%;
+  justify-self: flex-start;
+  align-self: flex-start;
+  flex-flow: column wrap;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.splashFootButton {
+  background-color: #7289DA;
+  width: 200px;
+  margin: 30px 40px 10px 10px;
+  color: #FFFFFF;
+  font-size: 10pt;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  height: 35px;
+  text-align: center;
+  position: absolute;
+  right: 175px;
+}
+
+.navLinkPlus {
+  font-size: 10pt;
+  color: #B9BBBE;
+  margin-bottom: 5px;
+}
+
+.navLinkPlus:visited {
+  color: #B9BBBE;
+}
+
+.navLinkPlus:hover {
+  color: #FFFFFF;
+}
+
+.authButton:hover {
+  background-color: #677BC4;
+}
+
+.splashAuthButton:hover {
+  background-color: #677BC4;
+}
+
+
+.splashFootButton:hover {
+  background-color: #677BC4;
+}
+
+.deeElButton:hover{
+  background-color: #B9BBBE;
 }

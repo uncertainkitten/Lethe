@@ -98,7 +98,9 @@ class Greeting extends React.Component {
             <div className="deeElButton">Download for {osName}</div>
             <div className="splashAuthButton">Open Discord in your Browser</div>
           </div>
-          <div className="fancy">: )</div>
+          <div className="fancyContainer">
+           <div className="fancy">: )</div>
+          </div>
           <Footer />
         </div>
       </div>
