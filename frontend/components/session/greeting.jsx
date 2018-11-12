@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { logout } from '../../actions/session_actions';
 var classNames = require('classnames');
+import {osName} from "react-device-detect";
+import Footer from './footer';
 
 class Greeting extends React.Component {
   constructor(props) {
@@ -88,6 +90,17 @@ class Greeting extends React.Component {
           <Link className={classRight} to="/language">Language</Link>
         </div>
         </header>
+        <div className="greetBody">
+          <p className="bigSplashText">It's time to ditch those Other Proprietary Video Chat Apps!</p>
+          <p className="sm0lSplashText">All in one voice and text chat for coders that's free, secure, and works on both desktop and your phone.</p>
+          <p className="sm0lSplashText">Stop paying for Trademarked App servers and hassling with Other Trademarked App.  Simplify your life!</p>
+          <div className="buttonContainer">
+            <div className="deeElButton">Download for {osName}</div>
+            <div className="splashAuthButton">Open Discord in your Browser</div>
+          </div>
+          <div className="fancy">: )</div>
+          <Footer />
+        </div>
       </div>
       );
     }

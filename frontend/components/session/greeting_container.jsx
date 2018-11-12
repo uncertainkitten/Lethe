@@ -4,6 +4,7 @@ import {logout} from '../../actions/session_actions';
 import {fetchServersByUser} from '../../actions/server_actions';
 import {fetchChannels} from '../../actions/channel_actions';
 
+
 const mapStateToProps = state => {
   let loggedIn;
   if (state.session.id) {
@@ -16,7 +17,7 @@ const mapStateToProps = state => {
     currentUser: state.entities.users[state.session.id],
     errors: state.errors.session,
     currentServer: Object.values(state.entities.servers)[0],
-    currentChannel: Object.values(state.entities.channels)[0]
+    currentChannel: Object.values(state.entities.channels)[0],
   });
 }
 
