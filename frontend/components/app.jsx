@@ -14,7 +14,7 @@ const App = () => (
     <header className="appHeader">
       <Switch>
         <ProtectedRoute path="/servers/:id" component={ServerHeaderContainer} />
-        <Route path="/" component={GreetingContainer}/>
+        <Route path="/" component={GreetingContainer} />
       </Switch>
     </header>
     <ProtectedRoute path="/servers" component={SplashContainer} />

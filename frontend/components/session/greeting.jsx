@@ -70,7 +70,19 @@ class Greeting extends React.Component {
           </div>
         </header>
         <p className="welcome">Welcome, {this.props.currentUser.username}</p>
-        <p className="welcome">(Note - this is a temporary page - will be updated to look more Discord-y)</p>
+          <div className="greetBody">
+            <p className="bigSplashText">It's time to ditch those Other Proprietary Video Chat Apps!</p>
+            <p className="sm0lSplashText">All in one voice and text chat for coders that's free, secure, and works on both desktop and your phone.</p>
+            <p className="sm0lSplashText">Stop paying for Trademarked App servers and hassling with Other Trademarked App.  Simplify your life!</p>
+            <div className="buttonContainer">
+              <div className="deeElButton">Download for {osName}</div>
+              <div className="splashAuthButton">Open Lethe</div>
+            </div>
+            <div className="fancyContainer">
+              <div className="fancy">: )</div>
+            </div>
+            <Footer />
+          </div>
       </div>
       );
     } else {
@@ -96,7 +108,7 @@ class Greeting extends React.Component {
           <p className="sm0lSplashText">Stop paying for Trademarked App servers and hassling with Other Trademarked App.  Simplify your life!</p>
           <div className="buttonContainer">
             <div className="deeElButton">Download for {osName}</div>
-            <div className="splashAuthButton">Open Discord in your Browser</div>
+            <div className="splashAuthButton">Open Lethe in your Browser</div>
           </div>
           <div className="fancyContainer">
            <div className="fancy">: )</div>
