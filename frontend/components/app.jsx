@@ -12,10 +12,8 @@ import { AuthRoute, ProtectedRoute }from '../util/route_util';
 const App = () => (
   <div className="app">
     <header className="appHeader">
-      <Switch>
-        <ProtectedRoute path="/servers/:id" component={ServerHeaderContainer} />
-        <Route path="/" component={GreetingContainer} />
-      </Switch>
+      <Route exact path="/" component={GreetingContainer} />
+      <ProtectedRoute path="/servers/:id" component={ServerHeaderContainer} />
     </header>
     <ProtectedRoute path="/servers" component={SplashContainer} />
     <div className="authWrapper">

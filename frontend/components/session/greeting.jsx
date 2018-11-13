@@ -4,6 +4,7 @@ import { logout } from '../../actions/session_actions';
 var classNames = require('classnames');
 import {osName} from "react-device-detect";
 import Footer from './footer';
+import withRouter from 'react-router-dom/withRouter';
 
 class Greeting extends React.Component {
   constructor(props) {
@@ -81,7 +82,7 @@ class Greeting extends React.Component {
             <div className="fancyContainer">
               <div className="fancy">: )</div>
             </div>
-            <Footer />
+            <Footer loggedIn={this.props.loggedIn} route={this.props.route}/>
           </div>
       </div>
       );
@@ -113,7 +114,7 @@ class Greeting extends React.Component {
           <div className="fancyContainer">
            <div className="fancy">: )</div>
           </div>
-          <Footer />
+          <Footer loggedIn={this.props.loggedIn} route={this.props.route}/>
         </div>
       </div>
       );
@@ -121,4 +122,4 @@ class Greeting extends React.Component {
   }
 }
 
-export default Greeting;
+export default withRouter(Greeting);

@@ -2,7 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 class Footer extends React.Component {
+
   render() {
+    let footerAuth;
+    if (this.props.loggedIn) {
+      footerAuth = "Open Lethe"
+    } else {
+      footerAuth = "Sign up now"
+    }
+
     return (
       <div className="footer">
         <Link to='/'><div className="sm0lLetheLogo"></div></Link>
@@ -46,7 +54,7 @@ class Footer extends React.Component {
         <div className="footerFooter">
           <p className="bigfootText">Ready to try Lethe? It's free!</p>
           <p className="sm0lfootText">JOIN OVER 150 MILLION CODERS TODAY</p>
-          <button className="splashFootButton">Sign Up Now</button>
+          <button className="splashFootButton">{footerAuth}</button>
         </div>
       </div>
     );

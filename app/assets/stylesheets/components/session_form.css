@@ -104,3 +104,12 @@
 .authQuest {
   color: #6D7177;
 }
+
+.overlay{
+  background: linear-gradient(to bottom right, #36393F 0%, #223344 100%);
+  width: 1920px;
+  height: 830px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

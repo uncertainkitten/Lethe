@@ -5,7 +5,7 @@ import {fetchServersByUser} from '../../actions/server_actions';
 import {fetchChannels} from '../../actions/channel_actions';
 
 
-const mapStateToProps = state => {
+const mapStateToProps = (state, ownProps) => {
   let loggedIn;
   if (state.session.id) {
     loggedIn = true
@@ -18,6 +18,7 @@ const mapStateToProps = state => {
     errors: state.errors.session,
     currentServer: Object.values(state.entities.servers)[0],
     currentChannel: Object.values(state.entities.channels)[0],
+    route: ownProps.location.pathname
   });
 }
 

@@ -122,76 +122,77 @@ class SessionForm extends React.Component {
       return (<Redirect to='/servers' />);
     }  else if (this.props.formType === 'login') {
       return (
-        <div className="session">
-          <p className="sessionError">{this.state.otherError}</p>
-          <h3 className="welcome">Welcome back!</h3>
-          <p className="authTagline">We're so excited to see you again!</p>
+      <div className="overlay">
+          <div className="session">
+            <p className="sessionError">{this.state.otherError}</p>
+            <h3 className="welcome">Welcome back!</h3>
+            <p className="authTagline">
+              We're so excited to see you again!
+            </p>
 
-          <form className="authForm" onSubmit={this.handleSubmit}>
-            <label className={emailClass}>EMAIL <span className="sessionError">{this.state.emailError}</span>
-            <br/>
-              <input
-                className="authText"
-                type="text"
-                value={this.state.email}
-                onChange={this.update('email')}
-                />
-            </label>
+            <form className="authForm" onSubmit={this.handleSubmit}>
+              <label className={emailClass}>
+                EMAIL <span className="sessionError">
+                  {this.state.emailError}
+                </span>
+                <br />
+                <input className="authText" type="text" value={this.state.email} onChange={this.update("email")} />
+              </label>
 
-
-            <label className={passwordClass}>PASSWORD <span className="sessionError">{this.state.passwordError}</span>
-              <br />
-              <input
-                className="authText"
-                type="password"
-                value={this.state.password}
-                onChange={this.update('password')}
-              />
-            </label>
-            <Link className="authLink" to='/signup'>Forgot your password?</Link>
-            <input className="authButton" type="submit" value="Login" />
-            <input className="demoButton" type="submit" onClick={this.demoToggle} value="Demo" />
-            <span className="authLink authQuest" >Need an account? <Link to='/signup'>Register</Link></span>
-          </form>
+              <label className={passwordClass}>
+                PASSWORD <span className="sessionError">
+                  {this.state.passwordError}
+                </span>
+                <br />
+                <input className="authText" type="password" value={this.state.password} onChange={this.update("password")} />
+              </label>
+              <Link className="authLink" to="/signup">
+                Forgot your password?
+              </Link>
+              <input className="authButton" type="submit" value="Login" />
+              <input className="demoButton" type="submit" onClick={this.demoToggle} value="Demo" />
+              <span className="authLink authQuest">
+                Need an account? <Link to="/signup">Register</Link>
+              </span>
+            </form>
+          </div>
         </div>
         );
       } else {
       return (
-        <div className="session">
-          <p className="sessionError">{this.state.otherError}</p>
-          <h3 className="welcome">Create an account</h3>
-          <p className="authTagline"></p>
-          <form onSubmit={this.handleSubmit} className="authForm">
-            <label className={emailClass}>EMAIL <span className="sessionError">{this.state.emailError}</span>
-            <br />
-              <input
-                className="authText"
-                type="text"
-                value={this.state.email}
-                onChange={this.update('email')}
-              />
-            </label>
-            <label className={userClass}>USERNAME <span className="sessionError">{this.state.usernameError}</span>
-            <br />
-              <input
-                className="authText"
-                type="text"
-                value={this.state.username}
-                onChange={this.update('username')}
-              />
-            </label>
-            <label className={passwordClass}>PASSWORD <span className="sessionError">{this.state.passwordError}</span>
-            <br />
-              <input
-                className="authText"
-                type="password"
-                value={this.state.password}
-                onChange={this.update('password')}
-              />
-            </label>
-            <input className="authButton" type="submit" value="Continue" />
-            <Link className="authLink" to='/login'>Already have an account?</Link>
-          </form>
+      <div className="overlay">
+          <div className="session">
+            <p className="sessionError">{this.state.otherError}</p>
+            <h3 className="welcome">Create an account</h3>
+            <p className="authTagline" />
+            <form onSubmit={this.handleSubmit} className="authForm">
+              <label className={emailClass}>
+                EMAIL <span className="sessionError">
+                  {this.state.emailError}
+                </span>
+                <br />
+                <input className="authText" type="text" value={this.state.email} onChange={this.update("email")} />
+              </label>
+              <label className={userClass}>
+                USERNAME <span className="sessionError">
+                  {this.state.usernameError}
+                </span>
+                <br />
+                <input className="authText" type="text" value={this.state.username} onChange={this.update("username")} />
+              </label>
+              <label className={passwordClass}>
+                PASSWORD <span className="sessionError">
+                  {this.state.passwordError}
+                </span>
+                <br />
+                <input className="authText" type="password" value={this.state.password} onChange={this.update("password")} />
+              </label>
+              <input className="authButton" type="submit" value="Continue" />
+              <Link className="authLink" to="/login">
+                Already have an account?
+              </Link>
+            </form>
+          </div>
         </div>
       );
     }
