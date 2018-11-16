@@ -9,6 +9,7 @@
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
     "react": "^16.5.2",
+    "react-actioncable-provider": "^1.0.3",
     "react-device-detect": "^1.6.1",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",

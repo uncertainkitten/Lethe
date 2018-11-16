@@ -10,7 +10,6 @@ class Api::ChannelsController < ApplicationController
     else
       render json: ["Server not found"], status: 404
     end
-
   end
 
   def show
@@ -28,11 +27,14 @@ class Api::ChannelsController < ApplicationController
     @channel.server_id = params[:server_id]
 
     if @channel.save
-      render :show
+      serialized_data = ActiveModelSerializers::Adapter::Json.new(
+      ChannelSerializer.new(channel)
+      ).serializable_hash
+      ActionCable.server.broadcast 'channels_channel', serialized_data
+        head :ok
     else
       render json: @channel.errors.full_messages
     end
-
   end
 
   def destroy
