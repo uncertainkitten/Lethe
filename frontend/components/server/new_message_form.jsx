@@ -1,24 +1,24 @@
 import React from 'react';
-import { API_ROOT, HEADERS } from '../constants';
+import { API_ROOT, HEADERS } from '../../util/constants';
 
 class NewMessageForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       body: '',
-      channel_id: this.props.conversation_id,
-      user_id: this.props.user_id
+      channelId: this.props.channelId,
+      userId: this.props.userId
     };
   }
 
 
   componentWillReceiveProps(nextProps) {
-    this.setState({ channel_id: nextProps.channel_id });
-  };
+    this.setState({ channelId: nextProps.channelId});
+  }
 
   handleChange(e){
     this.setState({ body: e.target.value });
-  };
+  }
 
   handleSubmit(e){
     e.preventDefault();
@@ -29,7 +29,7 @@ class NewMessageForm extends React.Component {
       body: JSON.stringify(this.state)
     });
     this.setState({ body: '' });
-  };
+  }
 
   render() {
     return (
