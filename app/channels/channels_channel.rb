@@ -7,4 +7,12 @@ class ChannelsChannel < ApplicationCable::Channel
   def unsubscribed
     # Any cleanup needed when channel is unsubscribed
   end
+
+  def create(opts)
+    Message.create(
+      body: opts.fetch('content'),
+      user_id: opts.fetch('user_id'),
+      channel_id: opts.fetch('channel_id')
+    )
+  end
 end

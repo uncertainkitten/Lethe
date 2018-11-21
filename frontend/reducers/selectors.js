@@ -18,3 +18,7 @@ export const getInvite = (state, serverId) => {
   const inviteIndex = allServerInvites.length - 1
   return allServerInvites[inviteIndex];
 }
+
+export const getChannelMessages = ({entities}, channelId) => {
+  return Object.values(entities.messages).filter(message => message.channel_id.toString() === channelId.toString());
+};

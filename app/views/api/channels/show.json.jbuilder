@@ -1,4 +1,7 @@
-json.set! :id, @channel.id
-json.set! :name, @channel.name
-json.set! :server, @channel.server
-json.set! :messages, @channel.messages
+json.server do
+  json.partial! 'api/servers/server', server: @server
+end
+
+json.channel do
+  json.partial! 'channel', channel: @channel
+end

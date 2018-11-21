@@ -6,24 +6,9 @@ import { API_ROOT } from '../../util/constants';
 import {withRouter} from 'react-router-dom';
 
 class MessageIndex extends React.Component{
-  constructor(props) {
-    super(props)
-    if (this.props.channelId){
-      this.state = {
-        channelId: this.props.channelId
-      }
-    } else{
-      this.state = {
-        channelId: 1
-      }
-    }
-  }
-
   componentDidMount() {
-    if (this.props.channelId) {
-      this.props.fetchChannel(this.props.channelId)
-      .then(res => {this.setState({channel: res.channel})});
-    }
+    this.props.fetchChannel(this.props.channelId);
+    this.props.fetchMessages()
   }
 
   componentWillReceiveProps(nextProps, nextState) {

@@ -1,19 +1,23 @@
 class Api::MessagesController < ApplicationController
-    def create
-      message = Message.new(message_params)
-      channel = Channel.find(message_params[:channel_id])
-      if message.save
-      serialized_data = ActiveModelSerializers::Adapter::Json.new(
-          MessageSerializer.new(message)
-      ).serializable_hash
-      MessagesChannel.broadcast_to channel, serialized_data
-      head :ok
-      end
-    end
+  def index
+    @messages = Message.all
+    render :index
+  end
 
-    private
+  def create
+    @message = Message.new(message_params)
+    @message.user_id = current_user.id
 
-    def message_params
-      params.require(:message).permit(:body, :channel_id, :user_id)
+    if @message.save
+      render :show
+    else
+      render @message.errors.full_messages, status: 422
     end
+  end
+
+  private
+
+  def message_params
+    params.require(:message).permit(:body, :channel_id)
+  end
 end

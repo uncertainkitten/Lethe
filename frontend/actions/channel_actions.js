@@ -32,5 +32,5 @@ export const makeChannel = (serverId, channel) => dispatch => {
 }
 
 export const breakChannel = (serverId, channelId) => dispatch => {
-  return channelAPI.deleteChannel(serverID, channelId).then(channel => dispatch(removeChannel(channel)));
+  return channelAPI.deleteChannel(serverId, channelId).then(channel => dispatch(removeChannel(channel)));
 }
