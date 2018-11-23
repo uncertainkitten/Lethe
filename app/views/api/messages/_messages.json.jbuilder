@@ -1,1 +1,1 @@
-json.extract! message, :id, :body, :user_id, :channel_id, :created_at, :edit_flag
+json.extract! message, :id, :body, :channel_id, :user_id

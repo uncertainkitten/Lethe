@@ -1,3 +1,3 @@
 json.message do
-  json.partial! 'message', message: @message
+  json.partial! 'messages', message: @message
 end

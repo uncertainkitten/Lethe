@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 import {fetchChannels, fetchChannel, makeChannel, breakChannel} from './actions/channel_actions';
-import { API_WS_ROOT} from './util/constants';
-import {ActionCableProvider} from 'react-actioncable-provider';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
@@ -33,8 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //END TESTS
 
   ReactDOM.render(
-    <ActionCableProvider url={API_WS_ROOT}>
-      <Root store={store}/>
-    </ActionCableProvider>, root
+      <Root store={store}/>, root
   );
 });

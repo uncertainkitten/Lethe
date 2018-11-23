@@ -5,7 +5,7 @@ class NewMessageForm extends React.Component {
   componentWillMount() {
     this.createSocket();
   }
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -39,10 +39,10 @@ class NewMessageForm extends React.Component {
       received: (data) => {
         this.props.newMessage(data)
       },
-      create: function(messageBody, userId, channelId) {
+      create: function(messageBody, currentUserId, channelId) {
         this.perform('create', {
           body: messageBody,
-          user_id: userId,
+          user_id: currentUserId,
           channel_id: channelId
         });
       }
@@ -51,10 +51,11 @@ class NewMessageForm extends React.Component {
 
   handleSendEvent(e) {
     e.preventDefault();
-    this.props.createMessage(
+    this.channels.create(
       this.state.currentMessage,
       this.props.currentUser.id,
-      this.props.channel.id);
+      this.props.channel.id
+    )
     this.setState({
       currentMessage: ''
     });

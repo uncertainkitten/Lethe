@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 import NewMessageForm from './new_message_form';
 import { withRouter } from 'react-router-dom';
-import {createMessage} from '../../actions/message_actions';
+import {receiveMessage} from '../../actions/message_actions';
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -12,7 +12,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    newMessage: (message) => dispatch(createMessage(message))
+    newMessage: (message) => dispatch(receiveMessage(message))
   };
 };
 

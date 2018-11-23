@@ -5,7 +5,7 @@ class Api::MembershipsController < ApplicationController
   def index
     @server = Server.find_by(id: params[:server_id])
     if @server
-      @memberships = Membership.all.select {|membership| @server.memberships.include?(membership)}
+      @memberships = Membership.where(server_id: @server.id).includes(:user, :server)
       render :index
     else
       render json: ["Server not found"], status: 404

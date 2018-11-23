@@ -10,7 +10,7 @@ class ChannelsChannel < ApplicationCable::Channel
 
   def create(opts)
     Message.create(
-      body: opts.fetch('content'),
+      body: opts.fetch('body'),
       user_id: opts.fetch('user_id'),
       channel_id: opts.fetch('channel_id')
     )
