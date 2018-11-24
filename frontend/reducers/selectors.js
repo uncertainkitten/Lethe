@@ -22,3 +22,8 @@ export const getInvite = (state, serverId) => {
 export const getChannelMessages = ({entities}, channelId) => {
   return Object.values(entities.messages).filter(message => message.channel_id.toString() === channelId.toString());
 };
+
+export const getUserForMessage = (members, userId) => {
+  let userObj = Object.values(members).filter(member => member.user_id.toString() === userId.toString());
+  return userObj[0].user
+}

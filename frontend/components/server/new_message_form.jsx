@@ -11,6 +11,11 @@ class NewMessageForm extends React.Component {
     this.state = {
       currentMessage: '',
     };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e){
+    e.stopPropagation();
   }
 
   update(e) {
@@ -78,7 +83,8 @@ class NewMessageForm extends React.Component {
               onChange={ (e) => this.update(e) }
               type="text"
               placeholder={'Message #' + channelName}
-              className="message-input"/>
+              className="message-input"
+              onClick={this.handleClick}/>
           </div>
         </div>
       </div>

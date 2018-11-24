@@ -23,9 +23,9 @@ export const fetchChannels = (serverId) => dispatch => {
   return channelAPI.getChannels(serverId).then(channels => dispatch(receiveChannels(channels)));
 }
 
-export const fetchChannel = (channelId) => dispatch => {
-  return channelAPI.getChannel(channelId).then(channel => dispatch(receiveChannel(channel)));
-}
+// export const fetchChannel = (channelId) => dispatch => {
+//   return channelAPI.getChannel(channelId).then(channel => dispatch(receiveChannel(channel)));
+// }
 
 export const makeChannel = (serverId, channel) => dispatch => {
   return channelAPI.postChannel(serverId, channel).then(channel => dispatch(receiveChannel(channel)));

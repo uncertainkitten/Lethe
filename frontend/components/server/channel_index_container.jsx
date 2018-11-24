@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { makeChannel, breakChannel, fetchChannel, fetchChannels } from '../../actions/channel_actions';
+import { makeChannel, breakChannel, fetchChannels } from '../../actions/channel_actions';
 import { openModal, closeModal } from '../../actions/ui_actions';
 import {fetchServer} from '../../actions/server_actions';
 import ChannelIndex from './channel_index';
@@ -13,7 +13,7 @@ const mapStateToProps = (state, ownProps) => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchChannels: (serverId) => dispatch(fetchChannels(serverId)),
-  fetchChannel: (channelId) => dispatch(fetchChannel(channelId)),
+  // fetchChannel: (channelId) => dispatch(fetchChannel(channelId)),
   makeChannel: (serverId, channel) => dispatch(makeChannel(serverId, channel)),
   breakChannel: (serverId, channelId) => dispatch(breakChannel(serverId, channelId)),
   openModal: (channelId) => dispatch(openModal(channelId)),
