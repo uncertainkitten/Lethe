@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter} from 'react-router-dom';
+var moment = require('moment');
 
 class MessageIndexItem extends React.Component {
   constructor(props){
@@ -21,7 +22,7 @@ class MessageIndexItem extends React.Component {
       this.setState({
         messageUser: user,
         messageBody: this.props.message.body,
-        messageCreated: this.props.message.created_at
+        messageCreated: moment(this.props.message.created_at).calendar()
       });
     }
   }
@@ -30,8 +31,9 @@ class MessageIndexItem extends React.Component {
     return (
       <div className="messageIndexItemContainer">
         <li className="messageIndexItem">
-          <p className="messageUsername">{this.state.messageUser}</p>
-          <p className="messageCreated">{this.state.messageCreated}</p>
+          <span className="userAvatar">Avy</span>
+          <span className="messageUsername">{this.state.messageUser}</span>
+          <span className="messageCreated">{this.state.messageCreated}</span>
           <p className="messageBody">{this.state.messageBody}</p>
         </li>
       </div>
