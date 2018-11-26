@@ -11,7 +11,7 @@ class MessageIndexItem extends React.Component {
     }
   }
 
-  componentWillReceiveProps(nextProps){
+  componentDidMount(){
     this.buildMessage();
   }
 
