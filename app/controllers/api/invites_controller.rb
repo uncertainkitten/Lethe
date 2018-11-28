@@ -29,7 +29,6 @@ class Api::InvitesController < ApplicationController
   end
 
   def update
-    puts "Updating"
     @invite = Invite.find_by(id: params[:id])
     @membership = Membership.new(user_id: current_user.id, server_id: @invite.server_id)
 

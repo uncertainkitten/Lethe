@@ -29,7 +29,6 @@ class JoinServerForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     e.stopPropagation();
-    console.log("SUBMITTING!")
     let goldenTicket = Object.values(this.props.invites).filter(invite => invite.url === this.state.url);
     if (goldenTicket[0]) {
       this.props.useInvite(goldenTicket[0].id);
