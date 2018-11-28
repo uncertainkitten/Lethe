@@ -13,12 +13,12 @@ export const postChannel = (serverId, channel) => {
   })
 }
 
-export const getChannel = (channelId) => {
-  return $.ajax({
-    method: "GET",
-    url: `api/channels/${channelId}`
-  })
-}
+// export const getChannel = (channelId) => {
+//   return $.ajax({
+//     method: "GET",
+//     url: `api/channels/${channelId}`
+//   })
+// }
 
 export const deleteChannel = (serverId, channelId) => {
   return $.ajax({

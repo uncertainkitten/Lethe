@@ -1,6 +1,6 @@
 .userWidget {
-  height: 50px;
-  width: 250px;
+  height: 6vh;
+  width: 13vw;
   background-color: #2A2C31;
   display: flex;
   flex-flow: row wrap;
@@ -9,77 +9,78 @@
 }
 
 .userThreeAvatar {
-  height: 20px;
-  width: 20px;
+  height: 2vh;
+  width: 1vw;
   border: 1px solid black;
   border-radius: 50%;
   font-size: 22pt;
   text-align: center;
-  padding: 10px 5px 0px 5px;
-  margin-top: 10px;
-  margin-left: 5px;
+  padding: 1vh 0.25vw 0 0.25vw;
+  margin-top: 1vh;
+  margin-left: 0.25vw;
   background-color: #777700;
 }
 
 .userBox {
-  height: 40px;
-  width: 80px;
+  height: 5vh;
+  width: 4vw;
   display: flex;
   flex-flow: column wrap;
   justify-items: flex-start;
   background-color: #2A2C31;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  margin-left: 5px;
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
+  margin-left: 0.25vw;
 }
 
 .userInfo {
-  height: 10px;
-  width: 80px;
+  height: 1vh;
+  width: 4vw;
   margin: 2px;
   font-size: 8pt;
   background-color: #2A2C31;
 }
 
 .muteToggle{
-  height: 20px;
-  width: 30px;
+  height: 2vh;
+  width: 1.5vw;
   font-size: 12pt;
-  padding: 5px;
+  padding: 0.5vh;
   color: #AAAAAC;
   background-color: #2A2C31;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
 }
 
 .deafenToggle{
-  height: 20px;
+  height: 2vh;
   font-size: 12pt;
-  padding: 5px;
+  padding: 0.5vh;
   color: #AAAAAC;
-  width: 30px;
+  width: 1.5vw;
   background-color: #2A2C31;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
 }
 
 .userSettings{
-  height: 20px;
+  height: 2vh;
   font-size: 12pt;
-  padding: 5px;
+  padding: 0.5vh;
   color: #AAAAAC;
-  width: 30px;
+  width: 1.5vw;
   background-color: #2A2C31;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
 }
 
 .userAvatar {
-  height: 20px;
-  width: 20px;
+  height: 2vh;
+  width: 1vw;
   border: 1px solid black;
   border-radius: 50%;
   font-size: 7pt;
   text-align: center;
-  padding: 10px 5px 0px 5px;
+  padding: 1vh 0.25vw 0 0.25vw;
+  margin: 1vh 0.5vh;
 }

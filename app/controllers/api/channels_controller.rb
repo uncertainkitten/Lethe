@@ -10,18 +10,18 @@ class Api::ChannelsController < ApplicationController
     else
       render json: ["Server not found"], status: 404
     end
-
   end
 
-  def show
-    @channel = Channel.find_by(id: params[:id])
+  # def show
+  #   @channel = Channel.find_by(id: params[:id])
 
-    if @channel
-      render :show
-    else
-      render json: ["Channel not found"], status: 404
-    end
-  end
+  #   if @channel
+  #     @server = @channel.server
+  #     render :show
+  #   else
+  #     render json: ["Channel not found"], status: 404
+  #   end
+  # end
 
   def create
     @channel = Channel.new(channel_params)
@@ -32,7 +32,6 @@ class Api::ChannelsController < ApplicationController
     else
       render json: @channel.errors.full_messages
     end
-
   end
 
   def destroy

@@ -37,7 +37,7 @@ class ChannelIndex extends React.Component {
       mode={this.props.mode}
       openModal={this.props.openModal}
       closeModal={this.props.closeModal}
-      fetchChannel={this.props.fetchChannel}/>
+      />
     );} else {
       channelItems = "";
     }

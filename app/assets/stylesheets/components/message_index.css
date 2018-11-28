@@ -1,33 +1,92 @@
 .messageIndex {
   display: flex;
   flex-flow: row wrap;
-  width: 1325px;
-  height: 850px;
+  width: 69vw;
+  height: 89vh;
   align-items: flex-start;
 }
 
 .messages {
-  width: 1325px;
+  width: 69vw;
   font-size: 20pt;
-  height: 700px;
+  height: 77vh;
   text-align: center;
 }
 
 .messageInputWrapper {
   border-top: 2px solid #42454a;
-  height: 80px;
-  width: 1275px;
+  height: 7vh;
+  width: 67vw;
   display: flex;
   align-items: flex-end;
   justify-items: flex-start;
-  margin: 0px 25px;
+  margin: 0 1.25vw;
 }
 
 .messageInput {
-  width: 1275px;
+  width: 65vw;
   border: 1px solid #363933;
+  border-radius: 4px;
   background-color: #484B52;
-  height: 20px;
-  margin: 15px 0px;
-  padding: 10px
+  height: 2vh;
+  margin: 1.5vh 0;
+  padding: 1vh;
+  color: white;
+  font-size: 10pt;
+}
+
+.messageInput:focus {
+  outline-width: 0;
+}
+
+.messageIndexItemList{
+    height: 81vh;
+    color: #202225;
+    overflow-y: scroll;
+    z-index: 2;
+}
+
+.messageIndexItemList::-webkit-scrollbar {
+  -webkit-appearance: none;
+  display: none;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+
+.messageIndexItemContainer{
+  display: flex;
+}
+
+.messageUsername{
+  font-size: 12pt;
+  font-weight: bold;
+  color: white;
+  margin: 0.5vh;
+}
+.messageCreated{
+  color: #535558;
+  font-size: 8pt;
+  margin: 0.5vh;
+}
+.messageBody{
+  font-size: 12pt;
+  color: white;
+  padding: 1vh;
+}
+
+.messageAvatar {
+  height: 2.5vh;
+  width: 1.25vw;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 9pt;
+  margin: 0 0.25vw;
+  text-align: center;
+  padding: 1vh;
+}
+
+.emptyMessage{
+  color: #72767D;
+  font-size: 16pt;
+  padding-left: 30vw;
 }

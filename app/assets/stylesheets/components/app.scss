@@ -3,8 +3,8 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  width: 1900px;
-  height: 890px;
+  width: 99vw;
+  height: 98.9vh;
 }
 
 .appHeader{
@@ -14,15 +14,15 @@
   align-self: flex-start;
   margin: 0 auto;
   margin-left: 10px;
-  height: 150px;
+  height: 16vh;
 }
 
 .leftSplit{
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 900px;
-  height: 890px;
+  width: 50vw;
+  height: 100vh;
   margin: auto;
 }
 
@@ -31,7 +31,7 @@
   align-items: center;
   justify-content: center;
   flex-basis: 80%;
-  height: 890px;
+  height: 100vh;
   margin: auto;
 }
 
@@ -39,8 +39,8 @@
   cursor: pointer;
   background-image: image_url("lethe-logo");
   margin: 10px;
-  width: 100px;
-  height: 75px;
+  width: 5vw;
+  height: 9vh;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -49,8 +49,8 @@
   cursor: pointer;
   background-image: image_url("lethe-logo");
   margin: 10px;
-  width: 50px;
-  height: 40px;
+  width: 3vw;
+  height: 5vh;
   background-size: contain;
   background-repeat: no-repeat;
 }

@@ -15,7 +15,7 @@ class ChannelIndexItem extends React.Component {
     e.preventDefault();
     e.stopPropagation();
     if (this.state.mode !== `C${this.state.channel.id}`) {
-      this.props.fetchChannel(this.state.channel.id)
+      // this.props.fetchChannel(this.state.channel.id)
       this.props.openModal(`C${this.state.channel.id}`)
       this.setState({mode: this.props.mode});
       this.props.history.push(`/servers/${this.state.channel.server_id}/channels/${this.state.channel.id}`);
@@ -28,13 +28,20 @@ class ChannelIndexItem extends React.Component {
   render() {
     let stateClass;
     if (this.props.mode === `C${this.state.channel.id}`) {
-      stateClass = "selectedChannelItem";
+      stateClass = "selectedChannelContainer";
     } else {
-      stateClass = "channelItem";
+      stateClass = "channelItemContainer";
+    }
+
+    let itemClass;
+    if (this.props.mode === `C${this.state.channel.id}`) {
+      itemClass = "selectedChannelItem";
+    } else {
+      itemClass = "channelItem";
     }
     return (
-      <div className="channelItemContainer">
-        <span className={stateClass} onClick={this.handleClick}># {this.props.channel.name}</span>
+      <div className={stateClass}>
+        <div className={itemClass} onClick={this.handleClick}># {this.props.channel.name}</div>
       </div>
     );
   }

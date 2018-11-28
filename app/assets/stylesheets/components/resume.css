@@ -1,17 +1,17 @@
 .resume {
   display: flex;
-  width: 720px;
+  width: 37vw;
   flex-wrap: wrap;
   align-items: flex-start;
   box-shadow: 1px 1px 6px 6px #2E3035;
   border: 3px double #7289DA;
-  padding: 40px;
+  padding: 2vw;
 }
 
 .resumeName {
   font-size: 24pt;
   padding-top: 10px;
-  padding-left: 200px;
+  padding-left: 10.5vw;
   flex-basis: 100%;
   border-top: 3px double #FFFFFF;
 }
@@ -35,7 +35,7 @@
 
 .resumeList {
   padding-bottom: 5px;
-  padding-left: 40px;
+  padding-left: 2vw;
   list-style-type: circle;
 }
 

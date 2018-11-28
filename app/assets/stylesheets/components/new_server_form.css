@@ -1,8 +1,8 @@
 .newServerWrapper {
   display: flex;
   position: absolute;
-  top: 200px;
-  right: 700px;
+  top: 22vh;
+  right: 37vw;
   width: 520px;
   height: 420px;
   flex-flow: column wrap;
@@ -186,8 +186,8 @@
 .newServerForm {
   display: flex;
   position: absolute;
-  top: 200px;
-  right: 700px;
+  top: 22vh;
+  right: 37vw;
   width: 520px;
   height: 420px;
   flex-flow: column wrap;

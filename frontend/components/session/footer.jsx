@@ -13,7 +13,7 @@ class Footer extends React.Component {
 
     return (
       <div className="footer">
-        <Link to='/'><div className="sm0lLetheLogo"></div></Link>
+        <Link to='/' className="sm0lLogoContainer"><div className="sm0lLetheLogo"></div></Link>
         <div className="footerBox">
           <p className="footerHeader">Product</p>
           <Link className="navLinkPlus" to="/download">Download</Link>

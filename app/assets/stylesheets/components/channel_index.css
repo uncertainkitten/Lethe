@@ -1,7 +1,7 @@
 .channelIndex {
-  width: 240px;
+  width: 12.5vw;
   background-color: #2F3136;
-  height: 830px;
+  height: 90vh;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -9,13 +9,13 @@
 }
 
 .channelList {
-  height: 780px;
+  height: 84vh;
   background-color: #2F3136;
-  margin-left: 10px;
+  margin-left: 0.5vw;
   overflow-y: scroll;
   display: flex;
   flex-flow: column wrap;
-  width: 240px;
+  width: 12.5vw;
 }
 
 .channelList::-webkit-scrollbar{
@@ -26,22 +26,34 @@
 }
 
 .channelItemContainer{
-  width: 240px;
+  width: 11.5vw;
   background-color: #2F3136;
-  height: 40px;
-  margin-left: 5px;
+  height: 3vh;
+  padding: 0.5vh;
+  margin: 0.5vh;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .channelItem{
-  width: 230px;
-  background-color: #2F3136;
   font-size: 11pt;
 }
 
 .selectedChannelItem{
-  width: 230px;
-  background-color: #111111;
   font-size: 11pt;
+  background-color: #111111;
+}
+
+.selectedChannelContainer{
+  width: 11.5vw;
+  height: 3vh;
+  padding: 0.5vh;
+  margin: 0.5vh;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .channelItem:hover{

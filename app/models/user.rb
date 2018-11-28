@@ -36,6 +36,8 @@ class User < ApplicationRecord
 
   has_one_attached :avatar
 
+  has_many :messages
+
 
   def password=(password)
     @password = password
