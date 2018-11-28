@@ -30,8 +30,8 @@ class MessageIndexItem extends React.Component {
   render() {
     return (
       <div className="messageIndexItemContainer">
+       <div className="messageAvatar">Avy</div>
         <li className="messageIndexItem">
-          <span className="userAvatar">Avy</span>
           <span className="messageUsername">{this.state.messageUser}</span>
           <span className="messageCreated">{this.state.messageCreated}</span>
           <p className="messageBody">{this.state.messageBody}</p>

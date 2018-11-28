@@ -41,7 +41,9 @@ class MessageIndex extends React.Component{
     let display;
     if (log.length > 50){
       display = log.slice(log.length - 51);
-    } else{
+    } else if (log.length === 0){
+      display = <div className="emptyMessage">Be the first to chat here!</div>
+    } else {
       display = log
     }
 

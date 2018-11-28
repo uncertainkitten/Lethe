@@ -77,7 +77,7 @@ class Greeting extends React.Component {
             <p className="sm0lSplashText">Stop paying for Trademarked App servers and hassling with Other Trademarked App.  Simplify your life!</p>
             <div className="buttonContainer">
               <div className="deeElButton">Download for {osName}</div>
-              <div className="splashAuthButton">Open Lethe</div>
+              <Link to={`/servers/${server.id}/{channels}`} className="splashAuthButton">Open Lethe</Link>
             </div>
             <div className="fancyContainer">
               <div className="fancy">: )</div>
@@ -109,7 +109,7 @@ class Greeting extends React.Component {
           <p className="sm0lSplashText">Stop paying for Trademarked App servers and hassling with Other Trademarked App.  Simplify your life!</p>
           <div className="buttonContainer">
             <div className="deeElButton">Download for {osName}</div>
-            <div className="splashAuthButton">Open Lethe in your Browser</div>
+            <Link to="/login" className="splashAuthButton">Open Lethe in your Browser</Link>
           </div>
           <div className="fancyContainer">
            <div className="fancy">: )</div>

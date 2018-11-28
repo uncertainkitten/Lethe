@@ -7,7 +7,8 @@
 .nitroCharge {
   font-size: 200pt;
   border: 10px, dashed, #770077;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'Press Start 2P', cursive;
+  margin: 5vh 10vw;
 }
 
 .flashy {
