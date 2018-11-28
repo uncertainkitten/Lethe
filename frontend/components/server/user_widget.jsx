@@ -4,7 +4,7 @@ class UserWidget extends React.Component{
   render () {
     return (
       <div className="userWidget">
-        <div className="userThreeAvatar">3</div>
+        <div className="userAvatar">Avy</div>
         <div className="userBox">
           <div className="userInfo">{this.props.currentUser.username}</div>
           <div className="userInfo">{this.props.currentUser.id}</div>

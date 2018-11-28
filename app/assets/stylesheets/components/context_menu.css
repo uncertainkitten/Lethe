@@ -2,7 +2,7 @@
   position: absolute;
   height: 1px;
   width: 1px;
-  left: 40px;
+  left: 2vw;
 }
 
 .upMenu {
@@ -11,7 +11,7 @@
   width: 200px;
   border-radius: 5px;
   position: absolute;
-  bottom: 10px;
+  bottom: 1vh;
   z-index: 6;
 }
 
@@ -21,7 +21,7 @@
   width: 200px;
   border-radius: 5px;
   position: absolute;
-  top: 10px;
+  top: 1vh;
   z-index: 6;
 }
 

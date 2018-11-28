@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
-import {getChannels, getChannel, postChannel, deleteChannel} from './util/channel_api_util';
+import {fetchChannels, makeChannel, breakChannel} from './actions/channel_actions';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
@@ -22,13 +22,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // TESTS
-  window.getChannels = getChannels;
-  window.getChannel = getChannel;
-  window.postChannel = postChannel;
-  window.deleteChannel = deleteChannel;
+  window.fetchChannels = fetchChannels;
+  window.makeChannel = makeChannel;
+  window.breakChannel = breakChannel;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
   //END TESTS
 
-  ReactDOM.render(<Root store={store}/>, root)
+  ReactDOM.render(
+      <Root store={store}/>, root
+  );
 });

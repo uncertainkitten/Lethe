@@ -6,7 +6,7 @@
   z-index: 1;
   border: 0;
   box-shadow: 1px 1px 3px 3px #2E3035;
-  width: 450px;
+  width: 24vw;
   border-radius: 4px;
   margin: auto;
 }
@@ -21,20 +21,20 @@
   font-size: 9pt;
   color: #F04747;
   font-weight: bold;
-  margin: 10px 10px 10px 10px;
-  width: 390px;
+  margin: 1vh;
+  width: 20.5vw;
 }
 
 .welcome {
   font-size: 18pt;
-  margin: 8px;
+  margin: 1vh;
   font-weight: lighter;
-  padding-top: 35px;
+  padding-top: 4vh;
 }
 
 .authTagline {
   color: #72767D;
-  margin: 8px 15px 15px 15px;
+  margin: 1vh 1vw 2vh 1vw;
   font-size: 12pt;
 }
 
@@ -43,15 +43,15 @@
   align-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  width: 400px;
-  margin-bottom: 40px;
+  width: 21vw;
+  margin-bottom: 5vh;
 }
 
 .authButton {
   background-color: #7289DA;
   width: 100%;
-  padding: 13px;
-  margin: 30px 10px 10px 10px;
+  padding: 1.5vh;
+  margin: 3vh 0.5vw 1vh 0.5vw;
   color: #FFFFFF;
   font-size: 11pt;
   border-radius: 4px;
@@ -88,16 +88,16 @@
 .authText {
   background-color: #303339;
   border: solid 1px #222428;
-  margin-top: 10px;
-  padding: 11px 0px;
-  width: 390px;
+  margin-top: 1vh;
+  padding: 1vh 0;
+  width: 20.5vw;
   color: #F6F6F7;
 }
 
 .authLink {
   align-self: flex-start;
   font-size: 9pt;
-  margin: 2px 10px;
+  margin: 0.25vh 0.5vw;
   flex-basis: 45%;
 }
 
@@ -107,8 +107,8 @@
 
 .overlay{
   background: linear-gradient(to bottom right, #36393F 0%, #223344 100%);
-  width: 1920px;
-  height: 830px;
+  width: 99.9vw;
+  height: 84vh;
   display: flex;
   align-items: center;
   justify-content: center;

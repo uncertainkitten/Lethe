@@ -1,17 +1,17 @@
 .serverIndex {
   display: flex;
   flex-flow: column wrap;
-  width: 80px;
+  width: 4vw;
   align-items: center;
   justify-content: flex-start;
-  margin: 10px;
+  margin: 0.5vw;
   background-color: #202225;
   color: #202225;
 }
 
 .numOnline {
   text-align: center;
-  margin: 5px 10px;
+  margin: 0.5vh 0.5vw;
   font-size: 10pt;
   color: #5E6054;
   background-color: #202225;
@@ -19,8 +19,8 @@
 
 .hackBorder {
   border-bottom: 2px solid #5E6054;
-  margin: 10px 17px;
-  width: 35px;
+  margin: 1vh 1vw;
+  width: 2vw;
 }
 
 .serverIcon {
@@ -28,12 +28,12 @@
   border-radius: 50%;
   border: 1px solid #202225;
   font-size: 14pt;
-  height: 40px;
-  width: 60px;
-  padding-top: 20px;
+  height: 2em;
+  width: 3em;
+  padding-top: 0.75em;
   align-content: center;
   text-align: center;
-  margin: 5px;
+  margin: 0.5vh;
   z-index: 2;
 }
 
@@ -48,12 +48,12 @@
   border: 1px dashed #535559;
   color: #535559;
   font-size: 36pt;
-  height: 55px;
-  width: 60px;
-  padding-top: 5px;
+  height: 5vh;
+  width: 3vw;
+  padding-top: 0.5vh;
   align-content: center;
   text-align: center;
-  margin: 5px;
+  margin: 0.5vh;
   background-color: #202225
 }
 
@@ -64,7 +64,7 @@
 }
 
 .serverList {
-  height: 730px;
+  height: 80vh;
   background-color: #202225;
   color: #202225;
   overflow-y: scroll;

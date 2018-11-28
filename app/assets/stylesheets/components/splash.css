@@ -1,7 +1,7 @@
 .splash {
   display: flex;
-  width: 1900px;
-  height: 820px;
+  width: 99vw;
+  height: 88vh;
   align-items: flex-start;
   justify-content: flex-start;
   flex-flow: row wrap;
@@ -9,71 +9,71 @@
 }
 
 .serverContainer {
-  width: 100px;
+  width: 5vw;
   background-color: #202225;
-  height: 820px;
+  height: 90vh;
   border-bottom: 1px solid #282A2F;
 }
 
 .channelContainer {
-  width: 250px;
+  width: 13vw;
   background-color:#2F3136;
-  height: 830px;
+  height: 91vh;
   border-bottom: 1px solid #282A2F;
-  margin-top: -10px;
+  margin-top: -1vh;
 }
 
 .messageContainer {
-  width: 1325px;
-  height: 810px;
+  width: 69vw;
+  height: 90vh;
   border-bottom: 1px solid #282A2F;
 }
 
 .userContainer {
-  width: 224px;
-  height: 850px;
+  width: 11.9vw;
+  height: 93vh;
   background-color:#2F3136;
   border-right: 1px solid #282A2F;
   border-bottom: 1px solid #282A2F;
-  margin-top: -26px;
+  margin-top: -3.3vh;
   z-index: 9;
 }
 
 .serverHeader {
   display: flex;
-  width: 1900px;
+  width: 98.5vw;
   flex-direction: row;
-  height: 100px;
+  height: 10vh;
   margin: 0 auto;
 }
 
 .bg-box {
   background-color: #202225;
   color: #202225;
-  width: 100px;
-  margin-left: -10px;
-  height: 110px;
+  width: 5vw;
+  margin-left: -0.5vw;
+  height: 12vh;
 }
 
 .menu-box {
   background-color: #2F3136;
   color: #2F3136;
-  width: 250px;
-  height: 100px;
+  width: 13vw;
+  height: 11vh;
 }
 
 .userIcon {
   border-radius: 50%;
   border: 1px solid black;
   font-size: 10pt;
-  height: 35px;
-  width: 65px;
+  height: 3em;
+  width: 5em;
   align-content: center;
-  padding-top: 25px;
+  padding-top: 1.5em;
   text-align: center;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 10px;
+  margin-top: 0.5vh;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 
 .userIcon:hover {
@@ -81,86 +81,86 @@
 }
 
 .shadow-box {
-  width: 1800px;
+  width: 94vw;
   display: flex;
   flex-direction: row;
-  height: 50px;
+  height: 5vh;
   box-shadow: -1px 2px 2px #282A2F;
   justify-content: flex-start;
   align-content: center;
 }
 
 .serverMenu {
-  width: 220px;
+  width: 11.5vw;
   box-shadow: -1px 2px 2px #282A2F;
   background-color: #2F3136;
   font-size: 12pt;
-  height: 20px;
-  padding: 15px;
+  height: 2vh;
+  padding: 1.5vh;
 }
 
 .channelName {
   font-size: 11pt;
   font-weight: bold;
-  padding: 15px;
-  height: 20px;
+  padding: 1.5vh;
+  height: 2vh;
 }
 
 .leftDivide {
   border-left: 2px solid #5E6054;
-  margin: 10px 10px;
-  height: 20px;
+  margin: 0.5vh 0.5vw;
+  height: 4vh;
 }
 
 .channelTopic {
-  width: 1200px;
-  padding: 15px;
+  width: 60vw;
+  padding: 1.5vh;
   font-size: 10pt;
   color: #5E6054;
-  height: 20px;
+  height: 2vh;
 }
 
 .muteChannel {
   font-size: 12pt;
-  padding: 15px 10px;
+  padding: 1.5vh 0.5vw;
   color: #5E6054;
-  height: 20px;
+  height: 2vh;
 }
 
 .pinMessage{
   font-size: 12pt;
-  padding: 15px 10px;
+  padding: 1.5vh 0.5vw;
   color: #5E6054;
-  height: 20px;
+  height: 2vh;
 }
 
 .memberListToggle {
   font-size: 12pt;
-  padding: 15px 10px;
+  padding: 1.5vh 0.5vw;
   color: #5E6054;
-  height: 20px;
+  height: 2vh;
 }
 
 .search {
   font-size: 12pt;
-  padding: 15px 10px;
-  width: 150px;
+  padding: 1.5vh 0.5vw;
+  width: 6vw;
   color: #5E6054;
-  height: 20px;
+  height: 2vh;
 }
 
 .mentions {
   font-size: 12pt;
- padding: 15px 10px;
+  padding: 1.5vh 0.5vw;
   color: #5E6054;
-  height: 20px;
+  height: 2vh;
 }
 
 .help {
   font-size: 12pt;
-  padding: 15px 10px;
+  padding: 1.5vh 0.5vw;
   color: #5E6054;
-  height: 20px;
+  height: 2vh;
   border-right: 1px solid #282A2F;
 }
 

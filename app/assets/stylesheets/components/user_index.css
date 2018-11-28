@@ -1,8 +1,8 @@
 .userIndex {
   display: flex;
   flex-flow: row wrap;
-  width: 250px;
-  height: 830px;
+  width: 11.5vw;
+  height: 92vh;
   align-items: flex-start;
   background-color: #2F3136;
   border-right: 1px solid #282A2F;
@@ -10,15 +10,16 @@
 
 .userList {
   background-color: #2F3136;
-  margin-left: 10px;
-  width: 190px;
+  margin-left: 0.25vw;
+  width: 11.5vw;
   z-index: 11;
 }
 
 .userIndexItemContainer {
   background-color: #2F3136;
-  margin-left: 10px;
-  width: 239px;
+  margin-left: 0.5vw;
+  width: 11vw;
+  height: 2em;
   z-index: 12;
   display: flex;
   flex-flow: row wrap;
@@ -26,8 +27,8 @@
 
 .userItem {
   background-color: #2F3136;
-  width: 110px;
-  padding: 10px;
+  width: 5.75vw;
+  padding: 1em 0.25em;
   font-size: 12pt;
   z-index: 13;
 }

@@ -11,7 +11,6 @@ class Api::ServersController < ApplicationController
     @server = Server.find_by(id: params[:id])
 
     if @server
-      @memberships = @server.memberships.map {|membership| membership}
       render :show
     else
       render json: ["Server not found"], status: 404
