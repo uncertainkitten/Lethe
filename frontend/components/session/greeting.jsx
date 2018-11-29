@@ -17,15 +17,12 @@ class Greeting extends React.Component {
     if (this.props.currentUser){
       this.props.fetchServersByUser(this.props.currentUser.id);
     }
-
-    if (this.props.currentServer) {
-      this.props.fetchChannels(this.props.currentServer.id);
-    }
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.currentServer !== nextProps.currentServer) {
       this.setState({server: nextProps.currentServer});
+      this.props.fetchChannels(nextProps.currentServer.id);
     }
 
     if (this.props.currentChannel !== nextProps.currentChannel) {
@@ -45,7 +42,7 @@ class Greeting extends React.Component {
     if (this.state.server) {
       server = this.state.server
       if (this.state.channel) {
-       channel = "channels";
+       channel = `channels/${this.state.channel.id}`;
       } else {
         channel = "";
       }

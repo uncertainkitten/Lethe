@@ -15,7 +15,6 @@ class ChannelIndexItem extends React.Component {
     e.preventDefault();
     e.stopPropagation();
     if (this.state.mode !== `C${this.state.channel.id}`) {
-      // this.props.fetchChannel(this.state.channel.id)
       this.props.openModal(`C${this.state.channel.id}`)
       this.setState({mode: this.props.mode});
       this.props.history.push(`/servers/${this.state.channel.server_id}/channels/${this.state.channel.id}`);

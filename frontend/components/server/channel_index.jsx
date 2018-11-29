@@ -20,7 +20,8 @@ class ChannelIndex extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.currentServerId !== this.props.currentServerId) {
-      this.props.fetchChannels(nextProps.currentServerId);
+      this.props.fetchChannels(nextProps.currentServerId)
+      .then(res => this.props.history.push(`/servers/${nextProps.currentServerId}/channels/${Object.values(res.channels)[0].id}`))
       this.setState({channels: this.props.channels, currentServerId: nextProps.currentServerId})
     }
   }
