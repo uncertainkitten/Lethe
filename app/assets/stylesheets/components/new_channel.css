@@ -1,0 +1,90 @@
+.newChannelForm {
+  display: flex;
+  position: absolute;
+  top: 35vh;
+  left: 40vw;
+  width: 300px;
+  height: 270px;
+  flex-flow: column wrap;
+  justify-items: center;
+  align-items: center;
+  background-color: #36393F;
+  box-shadow: 2px 2px 5px 5px #2E3035;
+  border-radius: 5px;
+  z-index: 99;
+}
+
+.createChannelHeader{
+  height: 20px;
+  width: 280px;
+  font-size: 8pt;
+  color: #DDEEFF;
+  text-shadow: 1px 0px #DDEEFF;
+  background-color: #36393F;
+  margin-top: 20px;
+  margin-left: 15px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.createChannelLabel{
+  font-size: 10pt;
+  color: #AAAACC;
+  text-shadow: 1px 0px #AAAACC;
+  width: 280px;
+  background-color: #36393F;
+  height: 25px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.createChannelText{
+  width: 280px;
+  height: 40px;
+  background-color: #303339;
+  color: #EEEEEE;
+  margin-left: 10px;
+  font-size: 11pt;
+  box-shadow: 0;
+  border: 1px solid #222428;
+}
+
+.thatWasEasy{
+  height: 40px;
+  width: 280px;
+  font-size: 9pt;
+  color: #DDEEFF;
+  text-shadow: 1px 0px #DDEEFF;
+  background-color: #36393F;
+  margin-top: 20px;
+  margin-left: 15px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.cancelChannel{
+  height: 40px;
+  width: 60px;
+  background-color: #36393F;
+  color: #AAAACC;
+  box-shadow: 0;
+  border: 0;
+  font-size: 9pt;
+  text-align: center;
+  text-justify: center;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.submitCreateChannel{
+  height: 40px;
+  width: 150px;
+  background-color: #7289DA;
+  color: #FFFFFF;
+  font-size: 12pt;
+  box-shadow: 0;
+  border: 1px solid #7289DA;
+  text-align: center;
+  text-justify: center;
+  border-radius: 3px;
+  margin-right: 40px;
+  margin-top: 30px;
+}

@@ -34,7 +34,7 @@ class NewChannelForm extends React.Component {
       <form className="createChannelForm" onSubmit={this.handleSubmit}>
         <label className="createChannelLabel">CHANNEL NAME</label>
         <input
-        className="channelText"
+        className="createChannelText"
         type="text"
         value={this.state.name}
         onChange={this.update("name")}

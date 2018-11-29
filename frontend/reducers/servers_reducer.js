@@ -23,7 +23,7 @@ const serverReducer = (state = {}, action) => {
       delete newMemberState[action.membership.server_id];
       return newMemberState;
     case RECEIVE_INVITE:
-      return merge({}, state, {[action.server.id]: action.server});
+      return merge({}, state, {[action.invite.server.id]: action.invite.server});
     case LOGOUT_CURRENT_USER:
       return {};
     default:

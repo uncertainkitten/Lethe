@@ -40,10 +40,10 @@
 }
 
 .messageIndexItemList{
-    height: 81vh;
-    color: #202225;
-    overflow-y: scroll;
-    z-index: 2;
+  height: 81vh;
+  color: #202225;
+  overflow-y: scroll;
+  z-index: 2;
 }
 
 .messageIndexItemList::-webkit-scrollbar {
