@@ -12,13 +12,13 @@ class UserIndex extends React.Component {
   }
 
   componentDidMount() {
-    this.props.memberList(this.props.match.params.id);
+    this.props.memberList(this.props.match.params.serverId);
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.match.params.id !== this.props.match.params.id) {
-      this.props.memberList(nextProps.match.params.id);
-      this.setState({ users: this.props.users, currentServerId: nextProps.match.params.id });
+    if (nextProps.match.params.serverId !== this.props.match.params.serverId) {
+      this.props.memberList(nextProps.match.params.serverId);
+      this.setState({ users: this.props.users, currentServerId: nextProps.match.params.serverId });
     }
   }
 

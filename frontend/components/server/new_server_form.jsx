@@ -1,6 +1,6 @@
 /* eslint-disable max-classes-per-file */
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 
 class NewServerForm extends React.Component {
   constructor(props) {
@@ -44,7 +44,8 @@ class NewServerForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createServer(this.state);
+    this.props.createServer(this.state)
+    .then(server_res => this.props.makeChannel(server_res.server.id, {name: "general"}))
     this.props.closeModal();
   }
 
@@ -193,4 +194,4 @@ class ServerRegion extends React.Component {
   }
 }
 
-export default NewServerForm;
+export default withRouter(NewServerForm);

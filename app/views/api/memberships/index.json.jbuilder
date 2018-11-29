@@ -1,5 +1,5 @@
 @memberships.each do |membership|
-  json.set! membership.id do
+  json.set! membership.user_id do
     json.set! :id, membership.id
     json.set! :server_id, membership.server_id
     json.set! :user_id, membership.user_id

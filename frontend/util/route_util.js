@@ -22,9 +22,20 @@ const Protected = ({ component: Component, path, loggedIn, exact }) => (
   )}/>
 );
 
+const ProtectedServer = ({ component: Component, path, isMember, userId, exact }) => (
+  <Route path={path} exact={exact} render={(props) => (
+    isMember ? (
+      <Component {...props} />
+    ) : (
+      <Redirect to={`/servers/@me/${userId}`} />
+    )
+  )}/>
+)
+
 const mapStateToProps = state => {
-  return {loggedIn: Boolean(state.session.id)};
+  return {loggedIn: Boolean(state.session.id), isMember: Boolean(state.entities.members[state.session.id]), userId: state.session.id};
 };
 
 export const AuthRoute = withRouter(connect(mapStateToProps, null)(Auth));
 export const ProtectedRoute = withRouter(connect(mapStateToProps, null)(Protected));
+export const ProtectedServerRoute = withRouter(connect(mapStateToProps, null)(ProtectedServer));

@@ -40,6 +40,7 @@ class ServerIndex extends React.Component {
     let newServerMenu;
     if (this.state.newServer === -1) {
       newServerMenu = <NewServerWrapper
+      makeChannel={this.props.makeChannel}
       createServer={this.props.createServer}
       joinServer={this.props.joinServer}
       closeModal={this.props.closeModal}/>

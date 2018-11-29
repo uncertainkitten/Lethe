@@ -53,7 +53,8 @@ class NewServerWrapper extends React.Component {
         updatePage={this.updatePage}
         createServer={this.props.createServer}
         joinServer={this.props.joinServer}
-        closeModal={this.props.closeModal}/>);
+        closeModal={this.props.closeModal}
+        makeChannel={this.props.makeChannel}/>);
     } else if (this.state.page === 3) {
       return (<JoinServerFormContainer updatePage={this.updatePage} />);
     } else {

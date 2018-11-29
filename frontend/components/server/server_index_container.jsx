@@ -3,6 +3,7 @@ import ServerIndex from './server_index';
 import {fetchServersByUser, fetchServer, createServer, breakServer} from '../../actions/server_actions';
 import {memberList, joinServer, leaveServer} from '../../actions/membership_actions';
 import {openModal, closeModal} from '../../actions/ui_actions';
+import {makeChannel} from '../../actions/channel_actions';
 
 const mapStateToProps = state => ({
   servers: Object.values(state.entities.servers),
@@ -20,7 +21,8 @@ const mapDispatchToProps = dispatch => ({
   closeModal: () => dispatch(closeModal()),
   createServer: (server) => dispatch(createServer(server)),
   memberList: (serverId) => dispatch(memberList(serverId)),
-  breakServer: (serverId) => dispatch(breakServer(serverId))
+  breakServer: (serverId) => dispatch(breakServer(serverId)),
+  makeChannel: (serverId, channel) => dispatch(makeChannel(serverId, channel))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ServerIndex);

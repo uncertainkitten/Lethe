@@ -1,6 +1,7 @@
 import React from 'react';
 import UserWidget from './user_widget';
 import ChannelIndexItem from './channel_index_item';
+import ChannelContextMenu from './channel_context_menu';
 import {withRouter} from 'react-router-dom';
 
 class ChannelIndex extends React.Component {
@@ -10,6 +11,7 @@ class ChannelIndex extends React.Component {
       channels: this.props.channels,
       currentServerId: this.props.currentServerId
     }
+    this.handleRightClick = this.handleRightClick.bind(this);
   }
 
   componentDidMount() {
@@ -26,6 +28,11 @@ class ChannelIndex extends React.Component {
     }
   }
 
+  handleRightClick(e){
+    e.preventDefault();
+    this.props.openModal(-2);
+  }
+
   render() {
     let channelItems;
 
@@ -33,7 +40,6 @@ class ChannelIndex extends React.Component {
     channelItems = this.props.channels.map(channel => <ChannelIndexItem
       key={channel.id}
       channel={channel}
-      serverId={this.props.server}
       breakChannel={this.props.breakChannel}
       mode={this.props.mode}
       openModal={this.props.openModal}
@@ -43,9 +49,21 @@ class ChannelIndex extends React.Component {
       channelItems = "";
     }
 
+    let context = "";
+    if (this.props.mode === -2){
+      context = <ChannelContextMenu
+      currentUser={this.props.currentUser}
+      serverId={this.state.currentServerId}
+      fetchServer={this.props.fetchServer}
+      makeChannel={this.props.makeChannel}
+      closeModal={this.props.closeModal}
+      />
+    }
+
     return (
-      <div className="channelIndex">
+      <div className="channelIndex" onContextMenu={this.handleRightClick}>
         <ul className="channelList">{channelItems}</ul>
+        {context}
         <UserWidget currentUser={this.props.currentUser} />
       </div>
       );
