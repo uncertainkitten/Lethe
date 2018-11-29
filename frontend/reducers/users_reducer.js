@@ -1,4 +1,4 @@
-import { RECEIVE_CURRENT_USER} from '../actions/session_actions';
+import { RECEIVE_CURRENT_USER, LOGOUT_CURRENT_USER} from '../actions/session_actions';
 import {REMOVE_USER} from '../actions/user_actions';
 import {merge} from 'lodash';
 
@@ -12,6 +12,8 @@ const usersReducer = (state = {}, action) => {
       Object.assign(newState, state);
       delete newState[action.user];
       return newState;
+    case LOGOUT_CURRENT_USER:
+      return {};
     default:
       return state;
   }

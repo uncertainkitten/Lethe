@@ -16,6 +16,7 @@ class ServerIndexItem extends React.Component{
     this.toggleInvite = this.toggleInvite.bind(this);
   }
 
+
   componentDidUpdate(prevProps) {
     if (prevProps.mode !== this.props.mode) {
       this.updateModal();

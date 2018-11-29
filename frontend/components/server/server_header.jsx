@@ -21,12 +21,6 @@ class ServerHeader extends React.Component {
     }
   }
 
-  componentDidUpdate() {
-    if (!this.props.server) {
-      this.props.history.push(`/servers/${this.props.currentServer.id}`);
-    }
-  }
-
   render () {
     let serverName;
     if (this.props.server) {

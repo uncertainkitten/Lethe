@@ -20,7 +20,7 @@ class Greeting extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.currentServer !== nextProps.currentServer) {
+    if ((nextProps.currentServer && (this.props.currentServer !== nextProps.currentServer))) {
       this.setState({server: nextProps.currentServer});
       this.props.fetchChannels(nextProps.currentServer.id);
     }

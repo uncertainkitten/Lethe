@@ -1,6 +1,7 @@
 import {RECEIVE_SERVER, REMOVE_SERVER, RECEIVE_USER_SERVERS} from '../actions/server_actions';
 import {REMOVE_MEMBERSHIP} from '../actions/membership_actions';
 import {RECEIVE_INVITE} from '../actions/invite_actions';
+import {LOGOUT_CURRENT_USER} from '../actions/session_actions';
 import {merge} from 'lodash';
 
 const serverReducer = (state = {}, action) => {
@@ -23,6 +24,8 @@ const serverReducer = (state = {}, action) => {
       return newMemberState;
     case RECEIVE_INVITE:
       return merge({}, state, {[action.server.id]: action.server});
+    case LOGOUT_CURRENT_USER:
+      return {};
     default:
       return state;
   }
