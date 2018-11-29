@@ -64,16 +64,11 @@ class User < ApplicationRecord
 
   def self.find_by_credentials(email, password)
     user = User.find_by(email: email)
-    verify = -1
 
-    if user && user.is_password?(password)
-      verify = 1
-    elsif user
-      verify = 0
-    end
-
-    if verify < 1
-      return verify
+    if !user
+      return :not_found
+    elsif !user.is_password?(password)
+      return :wrong_password
     else
       return user
     end

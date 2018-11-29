@@ -4,9 +4,9 @@ class Api::SessionsController < ApplicationController
   def create
     @user = User.find_by_credentials(params[:user][:email], params[:user][:password])
 
-    if @user == -1
+    if @user == :not_found
       render json: ["Email does not exist"], status: 401
-    elsif @user == 0
+    elsif @user == :wrong_password
       render json: ["Password does not match"], status: 401
     elsif @user
       login!(@user)
