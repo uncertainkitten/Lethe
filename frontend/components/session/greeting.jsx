@@ -16,7 +16,9 @@ class Greeting extends React.Component {
   componentDidMount() {
     if (this.props.currentUser){
       this.props.fetchServersByUser(this.props.currentUser.id);
-    } else if (this.props.currentServer) {
+    }
+
+    if (this.props.currentServer) {
       this.props.fetchChannels(this.props.currentServer.id);
     }
   }
@@ -67,7 +69,7 @@ class Greeting extends React.Component {
           <div className="right">
             <Link className="navLink" to="/language">Language</Link>
             <Link to="/login"><button className="logoutBtn" onClick={this.handleLogout}>Log Out</button></Link>
-            <Link to={`/servers/${server.id}/{channels}`} className="openBtn">Open</Link>
+            <Link to={`/servers/${server.id}/${channel}`} className="openBtn">Open</Link>
           </div>
         </header>
         <p className="welcome">Welcome, {this.props.currentUser.username}</p>
@@ -77,7 +79,7 @@ class Greeting extends React.Component {
             <p className="sm0lSplashText">Stop paying for Trademarked App servers and hassling with Other Trademarked App.  Simplify your life!</p>
             <div className="buttonContainer">
               <div className="deeElButton">Download for {osName}</div>
-              <Link to={`/servers/${server.id}/{channels}`} className="splashAuthButton">Open Lethe</Link>
+              <Link to={`/servers/${server.id}/${channel}`} className="splashAuthButton">Open Lethe</Link>
             </div>
             <div className="fancyContainer">
               <div className="fancy">: )</div>
