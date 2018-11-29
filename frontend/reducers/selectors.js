@@ -25,5 +25,7 @@ export const getChannelMessages = ({entities}, channelId) => {
 
 export const getUserForMessage = (members, userId) => {
   let userObj = Object.values(members).filter(member => member.user_id.toString() === userId.toString());
-  return userObj[0].user
+  if (userObj.length > 0){
+    return userObj[0].user
+  }
 }
