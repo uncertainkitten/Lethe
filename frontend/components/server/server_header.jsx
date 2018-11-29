@@ -10,7 +10,9 @@ class ServerHeader extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchServer(this.props.match.params.id)
+    if (this.props.match.params.id){
+      this.props.fetchServer(this.props.match.params.id)
+    }
   }
 
   componentWillReceiveProps(nextProps) {

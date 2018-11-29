@@ -2,7 +2,7 @@ json.set! :user do
   json.partial! "api/user", user: @user
 end
 
-if @servers
+if @servers && !@servers.empty?
   json.set! :servers do
     @servers.each do |server|
       json.set! server.id do
@@ -12,4 +12,6 @@ if @servers
       end
     end
   end
+else
+  json.servers({})
 end

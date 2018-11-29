@@ -13,7 +13,7 @@ const App = () => (
   <div className="app">
     <header className="appHeader">
       <Route exact path="/" component={GreetingContainer} />
-      <ProtectedRoute path="/servers/:id" component={ServerHeaderContainer} />
+      <ProtectedRoute path="/servers" component={ServerHeaderContainer} />
     </header>
     <ProtectedRoute path="/servers" component={SplashContainer} />
     <div className="authWrapper">

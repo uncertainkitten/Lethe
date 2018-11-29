@@ -20,13 +20,13 @@ export const logoutCurrentUser = () => ({
 
 export const signup = (user) => dispatch => {
   return SessionAPI.postUser(user)
-    .then(user => dispatch(receiveCurrentUser(user)))
+    .then(user => dispatch(receiveCurrentUser(user.user)))
     .fail(err => dispatch(receiveSessionErrors(err.responseJSON)));
 };
 
 export const login = (user) => dispatch => {
   return SessionAPI.postSession(user)
-    .then(user => dispatch(receiveCurrentUser(user)))
+    .then(user => dispatch(receiveCurrentUser(user.user)))
     .fail(err => dispatch(receiveSessionErrors(err.responseJSON)));
 };
 

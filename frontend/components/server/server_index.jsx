@@ -18,7 +18,12 @@ class ServerIndex extends React.Component {
   }
 
   componentDidMount () {
-    this.props.fetchServersByUser(this.props.currentUser.id);
+    this.props.fetchServersByUser(this.props.currentUser.id)
+    .then(res => {
+      if (Object.keys(res.servers).length == 0){
+        this.props.openModal(-1);
+      }
+    })
   }
 
   handleClick(e) {

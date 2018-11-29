@@ -104,7 +104,7 @@ invites = Invite.create([
   {server_id: servers[0].id, num_uses: 3},
   {server_id: servers[0].id, num_uses: 2},
   {server_id: servers[0].id, num_uses: 1},
-  {server_id: servers[1].id, num_uses: 3},
+  {server_id: servers[1].id, num_uses: 10000},
   {server_id: servers[1].id, num_uses: 2},
   {server_id: servers[1].id, num_uses: 1},
   {server_id: servers[2].id, num_uses: 3},

@@ -40,14 +40,14 @@ class Greeting extends React.Component {
     let channel;
 
     if (this.state.server) {
-      server = this.state.server
+      server = `/servers/${this.state.server.id}/`
       if (this.state.channel) {
        channel = `channels/${this.state.channel.id}`;
       } else {
         channel = "";
       }
     } else {
-      server = "";
+      server = "/servers";
       channel = "";
     }
 
@@ -66,7 +66,7 @@ class Greeting extends React.Component {
           <div className="right">
             <Link className="navLink" to="/language">Language</Link>
             <Link to="/login"><button className="logoutBtn" onClick={this.handleLogout}>Log Out</button></Link>
-            <Link to={`/servers/${server.id}/${channel}`} className="openBtn">Open</Link>
+            <Link to={`${server}${channel}`} className="openBtn">Open</Link>
           </div>
         </header>
         <p className="welcome">Welcome, {this.props.currentUser.username}</p>
@@ -76,7 +76,7 @@ class Greeting extends React.Component {
             <p className="sm0lSplashText">Stop paying for Trademarked App servers and hassling with Other Trademarked App.  Simplify your life!</p>
             <div className="buttonContainer">
               <div className="deeElButton">Download for {osName}</div>
-              <Link to={`/servers/${server.id}/${channel}`} className="splashAuthButton">Open Lethe</Link>
+              <Link to={`${server}${channel}`} className="splashAuthButton">Open Lethe</Link>
             </div>
             <div className="fancyContainer">
               <div className="fancy">: )</div>

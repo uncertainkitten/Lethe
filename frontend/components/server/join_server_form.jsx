@@ -44,11 +44,16 @@ class JoinServerForm extends React.Component {
   }
 
   render() {
+    let sample_invite = "7316c8ce26";
+    if (Object.keys(this.props.invites)){
+      sample_invite = Object.keys(this.props.invites)[3]
+    }
+
     return (<div className="joinServerContainer" onSubmit={this.handleSubmit}>
       <h3 className="joinServerHeader">JOIN A SERVER</h3>
       <h3 className="joinServerText">Enter an Instant Invite below to join an existing </h3>
       <h3 className="joinServerText">server. The invite will look something like these:</h3>
-      <h4 className="exampleInvite">7316c8ce26</h4>
+      <h4 className="exampleInvite">{sample_invite} (Protip: This one works!)</h4>
       <h4 className="exampleInvite">bd0742b88f</h4>
       <form className="joinServerForm">
         <input
