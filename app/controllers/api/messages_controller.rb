@@ -4,11 +4,22 @@ class Api::MessagesController < ApplicationController
     render :index
   end
 
+  def show
+    @message = Message.find_by(id: params[:id])
+    if @message
+      @username = @message.user.username
+      render :show
+    else
+      render json: ["Message not found"], status: 404
+    end
+  end
+
   def create
     @message = Message.new(message_params)
     @message.user_id = current_user.id
 
     if @message.save
+      @username = @message.user.username
       render :show
     else
       render @message.errors.full_messages, status: 422

@@ -42,6 +42,7 @@ class NewMessageForm extends React.Component {
     }, {
       connected: () => {},
       received: (data) => {
+        data.username = this.props.currentUser.username;
         this.props.newMessage(data)
       },
       create: function(messageBody, currentUserId, channelId) {
