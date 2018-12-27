@@ -18,9 +18,8 @@ class MessageIndexItem extends React.Component {
 
   buildMessage(){
     if (Object.values(this.props.members).length !== 0){
-      let user = this.props.getUserForMessage(this.props.members, this.props.message.user_id);
       this.setState({
-        messageUser: user,
+        messageUser: this.props.message.username,
         messageBody: this.props.message.body,
         messageCreated: moment(this.props.message.created_at).calendar()
       });

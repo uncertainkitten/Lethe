@@ -15,7 +15,6 @@ class MessageIndex extends React.Component{
   componentDidMount() {
     this.props.fetchMessages();
     this.scrollToBottom();
-    this.props.memberList(this.props.serverId);
   }
 
   componentWillReceiveProps(nextProps){
